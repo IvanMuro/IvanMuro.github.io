@@ -80,7 +80,7 @@ show_title: false
         <span class="tag">Galaxy Evolution</span>
       </div>
     </article>
-    <article class="project-card">
+   <!--- <article class="project-card">
       <h3 class="project-title">The 300 Project</h3>
       <p class="project-description">
         Exploring the incidence of AGN in galaxy clusters using hydrodynamical simulations, bridging theory and observations.
@@ -90,6 +90,7 @@ show_title: false
         <span class="tag">AGN in Clusters</span>
       </div>
     </article>
+    -->
   </div>
 </section>
 
