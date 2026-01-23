@@ -1,0 +1,49 @@
+<div class="daily-quote" id="daily-quote">
+  <blockquote class="quote-text" id="quote-text">
+    <p></p>
+  </blockquote>
+  <cite class="quote-attribution" id="quote-attribution"></cite>
+</div>
+
+<script>
+(function() {
+  // Quote data from Jekyll (embedded at build time)
+  const quotes = [
+    {% for quote in site.data.quotes %}
+    {
+      text: {{ quote.text | jsonify }},
+      author: {{ quote.author | jsonify }},
+      source: {{ quote.source | jsonify | default: "null" }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  // Get day of year to use as index (same quote all day, changes at midnight)
+  function getDayOfYear() {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay);
+  }
+
+  // Select quote based on day of year
+  const dayOfYear = getDayOfYear();
+  const quoteIndex = dayOfYear % quotes.length;
+  const quote = quotes[quoteIndex];
+
+  // Display the quote
+  const textEl = document.querySelector('#quote-text p');
+  const attrEl = document.getElementById('quote-attribution');
+
+  if (textEl && attrEl && quote) {
+    textEl.textContent = quote.text;
+
+    let attribution = '— ' + quote.author;
+    if (quote.source && quote.source !== 'null') {
+      attribution += ', ' + quote.source;
+    }
+    attrEl.textContent = attribution;
+  }
+})();
+</script>

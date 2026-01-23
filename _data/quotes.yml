@@ -1,0 +1,366 @@
+# Daily Quotes
+# Add your favourite quotes here - one will be shown each day
+# The quote shown is determined by the day of the year, so everyone sees the same quote on the same day
+#
+# Format:
+#   - text: "The quote text"
+#     author: "Author Name"
+#     source: "Optional source (book, speech, etc.)"
+
+#- text: "The cosmos is within us. We are made of star-stuff."
+#  author: "Carl Sagan"
+#  source: "Cosmos"
+#
+#- text: "Somewhere, something incredible is waiting to be known."
+#  author: "Carl Sagan"
+#
+#- text: "The important thing is not to stop questioning. Curiosity has its own reason for existence."
+#  author: "Albert Einstein"
+#
+#- text: "We are all in the gutter, but some of us are looking at the stars."
+#  author: "Oscar Wilde"
+#  source: "Lady Windermere's Fan"
+#
+#- text: "The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars."
+#  author: "Carl Sagan"
+#  source: "Cosmos"
+#
+#- text: "Not only is the universe stranger than we imagine, it is stranger than we can imagine."
+#  author: "Arthur Eddington"
+#
+#- text: "The universe is under no obligation to make sense to you."
+#  author: "Neil deGrasse Tyson"
+#
+#- text: "In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move."
+#  author: "Douglas Adams"
+#  source: "The Restaurant at the End of the Universe"
+#
+#- text: "The good thing about science is that it's true whether or not you believe in it."
+#  author: "Neil deGrasse Tyson"
+#
+#- text: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
+#  author: "Albert Einstein"
+#
+#- text: "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist."
+#  author: "Stephen Hawking"
+#
+#- text: "The mountains are calling and I must go."
+#  author: "John Muir"
+#
+#- text: "It is not the mountain we conquer, but ourselves."
+#  author: "Edmund Hillary"
+#
+#- text: "The clearest way into the Universe is through a forest wilderness."
+#  author: "John Muir"
+#
+#- text: "Science is not only compatible with spirituality; it is a profound source of spirituality."
+#  author: "Carl Sagan"
+#  source: "The Demon-Haunted World"
+#
+#- text: "Equipped with his five senses, man explores the universe around him and calls the adventure Science."
+#  author: "Edwin Hubble"
+#
+#- text: "The most incomprehensible thing about the universe is that it is comprehensible."
+#  author: "Albert Einstein"
+#
+#- text: "Per aspera ad astra."
+#  author: "Latin proverb"
+#  source: "Through hardships to the stars"
+#
+#- text: "We are a way for the cosmos to know itself."
+#  author: "Carl Sagan"
+#  source: "Cosmos"
+#
+#- text: "The effort to understand the universe is one of the very few things that lifts human life a little above the level of farce."
+#  author: "Steven Weinberg"
+#
+#- text: "Philosophy is written in this grand book — I mean the universe — which stands continually open to our gaze."
+#  author: "Galileo Galilei"
+#
+#- text: "Doubt is not a pleasant condition, but certainty is absurd."
+#  author: "Voltaire"
+#
+#- text: "The only true wisdom is in knowing you know nothing."
+#  author: "Socrates"
+#
+#- text: "Wonder is the beginning of wisdom."
+#  author: "Socrates"
+#
+#- text: "Live as if you were to die tomorrow. Learn as if you were to live forever."
+#  author: "Mahatma Gandhi"
+#
+#- text: "The mind is not a vessel to be filled, but a fire to be kindled."
+#  author: "Plutarch"
+#
+#- text: "Every great advance in science has issued from a new audacity of imagination."
+#  author: "John Dewey"
+#
+#- text: "Research is what I'm doing when I don't know what I'm doing."
+#  author: "Wernher von Braun"
+#
+#- text: "The universe is not only queerer than we suppose, but queerer than we can suppose."
+#  author: "J.B.S. Haldane"
+#
+#- text: "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."
+#  author: "Albert Einstein"
+
+
+- text: "No todo el éxito se debe al trabajo duro, ni toda la pobreza a la pereza."
+  author: null
+  source: null
+
+- text: "No hay motivo alguno para arriesgar lo que tienes y necesitas, por algo que no tienes y no necesitas."
+  author: null
+  source: null
+
+- text: "No tengo costes irrecuperables."
+  author: null
+  source: null
+
+- text: "No todos los precios vienen en una etiqueta."
+  author: null
+  source: null
+
+- text: "Acostúmbrate a que un montón de cosas salgan mal; equivocándote la mitad de las veces puedes ganar -> Una pequeña cantidad de cosas son responsables del resultado"
+  author: null
+  source: null
+
+- text: "People are not driven by past causes, but move towards goals that they themself set."
+  author: null
+  source: null
+
+- text: "Tú no eliges lo que te apetece."
+  author: null
+  source: null
+
+- text: "Which is the goal behind the behaviour?"
+  author: null
+  source: null
+
+- text: "Life tasks → life lie."
+  author: null
+  source: null
+
+- text: "Separation of tasks."
+  author: null
+  source: null
+
+- text: "Ser razonable no racional."
+  author: null
+  source: null
+
+- text: "Equal but not the same."
+  author: null
+  source: null
+
+- text: "God grant me the serenity to accept the things I cannot change, courage to change the things I can, and wisdom always to tell the difference."
+  author: null
+  source: null
+
+- text: "Your next move decides if there is a next move."
+  author: null
+  source: null
+
+- text: "No hay trucos ni atajos."
+  author: null
+  source: null
+
+- text: "\"No\" con decisión, \"sí\" con cautela. Una promesa hecha es un vínculo ineludible."
+  author: null
+  source: null
+
+- text: "La ciencia avanza con cada funeral."
+  author: null
+  source: null
+
+- text: "Vive en guardia de tus propias tonterías."
+  author: null
+  source: null
+
+- text: "Espejos disfrazados de ventanas."
+  author: null
+  source: null
+
+- text: "La historia que te cuentas es la historia en que te conviertes."
+  author: null
+  source: null
+
+- text: "No tropieces con algo que está detrás de ti."
+  author: null
+  source: null
+
+- text: "Evita los viajes a Abilene."
+  author: null
+  source: null
+
+- text: "No todo problema necesita una respuesta."
+  author: null
+  source: null
+
+- text: "La atención que le prestas a cualquier cosa debe ser proporcional a su valor."
+  author: null
+  source: null
+
+- text: "La única felicidad que encontrarás en lo alto de la montaña es la que tú traigas."
+  author: null
+  source: null
+
+- text: "You can do anything but not everything."
+  author: null
+  source: null
+
+- text: "Cuando la métrica es el objetivo deja de ser una buena métrica."
+  author: null
+  source: null
+
+- text: "Es mejor una respuesta aproximadamente correcta que una exactamente equivocada."
+  author: null
+  source: null
+
+- text: "Interés compuesto."
+  author: null
+  source: null
+
+- text: "Cosas vs información."
+  author: null
+  source: null
+
+- text: "Tonterías que no son tonterías."
+  author: null
+  source: null
+
+- text: "Tú no mejoras nada, tu cuerpo se adapta."
+  author: null
+  source: null
+
+- text: "Cuando muramos no solo perderemos nuestro cuerpo sino también a aquellos que persisten en nuestra memoria."
+  author: null
+  source: null
+
+- text: "Las metáforas y las historias tienen muchísima más fuerza que las ideas. [...] . Las ideas van y vienen, las historias permanecen."
+  author: null
+  source: null
+
+- text: "Dinámica de la incertidumbre."
+  author: null
+  source: null
+
+- text: "Wisdom comes from experience. Experience is often a result of lack of wisdom."
+  author: null
+  source: null
+
+- text: "La falta de ideas se compensa con exceso de ideología."
+  author: null
+  source: null
+
+- text: "Lo que me entristece no es que me hayas mentido, sino que ya nunca podré confiar en ti."
+  author: null
+  source: null
+
+- text: "Debes encontrar una verdad que sea cierta para ti, una idea por la cual puedas vivir y morir."
+  author: null
+  source: null
+
+- text: "Si apartate, no tapes el sol."
+  author: null
+  source: null
+
+- text: "La felicidad se encuentra en la libertad de la autosuficiencia."
+  author: null
+  source: null
+
+- text: "Se trata de llegar a ser lo que uno verdaderamente es."
+  author: null
+  source: null
+
+- text: "Donde va tu atención va tu energía."
+  author: null
+  source: null
+
+- text: "Se tu propio espectador, busca tu propio aplauso."
+  author: null
+  source: null
+
+- text: "There are no solutions, only trade-offs."
+  author: null
+  source: null
+
+- text: "No es el mundo el que va despacio, es que tú vas con prisas."
+  author: null
+  source: null
+
+- text: "What stands on the way becomes the way."
+  author: null
+  source: null
+
+- text: "Move towards the next thing, not away from the last thing."
+  author: null
+  source: null
+
+- text: "Ver una oportunidad donde otros ven un límite."
+  author: null
+  source: null
+
+- text: "Change happens when the pain of staying the same is greater than the pain of change."
+  author: null
+  source: null
+
+- text: "El talento se construye en la calma, el carácter en la tempestad"
+  author: null
+  source: null
+
+- text: "Si no eres capaz de derrotar a tu rival, al menos no le ayudes a que te derrote."
+  author: null
+  source: null
+
+- text: "Alimentar a la bestia."
+  author: null
+  source: null
+
+- text: "Porque para vivir tu vida nadie te espera, está allí afuera."
+  author: null
+  source: null
+
+- text: "Rest at the end not in the middle."
+  author: null
+  source: null
+
+- text: "We don't rise to the level of our expectations, we fall to the level of our training."
+  author: null
+  source: null
+
+- text: "Cuidar el cuerpo para cuidar la mente."
+  author: null
+  source: null
+
+- text: "No todo lo que sobrevive lo hace por un motivo, pero todo lo que desaparece lo hace por una razón."
+  author: null
+  source: null
+
+- text: "I wish for everyone to achieve their hopes and their dreams so they can realise that it doesn't make them complete."
+  author: null
+  source: null
+
+- text: "Lo que creemos determina lo que hacemos."
+  author: null
+  source: null
+
+- text: "No todo lo que cuenta se puede contar y no todo lo que se puede contar cuenta."
+  author: null
+  source: null
+
+- text: "No se pueden recorrer todos los caminos a la vez."
+  author: null
+  source: null
+
+- text: "Still we rise."
+  author: "Maya Angelou"
+  source: null
+
+- text: "Think – follow – break – rebuild."
+  author: null
+  source: null
+
+- text: "Inspirar, respirar y no desistir."
+  author: null
+  source: null
