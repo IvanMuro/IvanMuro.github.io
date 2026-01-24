@@ -34,16 +34,9 @@
 
   // Display the quote
   const textEl = document.querySelector('#quote-text p');
-  const attrEl = document.getElementById('quote-attribution');
 
-  if (textEl && attrEl && quote) {
+  if (textEl && quote) {
     textEl.textContent = quote.text;
-
-    //let attribution = '— ' + quote.author;
-    //if (quote.source && quote.source !== 'null') {
-    //  attribution += ', ' + quote.source;
-    //}
-    //attrEl.textContent = attribution;
   }
 })();
 </script>
