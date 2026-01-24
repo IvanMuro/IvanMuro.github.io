@@ -595,31 +595,36 @@
 // ============================================
 
 .daily-quote {
+  display: inline-block;
   padding: var(--space-6);
+  padding-left: 100px; // Make room for lightbulb on the left
   border-radius: var(--radius-xl);
   margin: var(--space-8) 0;
   position: relative;
   background-color: var(--color-bg-alt);
-  background-size: cover;
-  background-position: center;
+  border: 1px solid var(--color-border);
+  background-size: 80px auto; // Show full lightbulb at appropriate size
+  background-position: 10px center; // Position on the left with small margin
   background-repeat: no-repeat;
+  min-height: 100px;
+  max-width: 100%;
 
-  // Semi-transparent overlay for text readability
+  // Semi-transparent overlay for text readability (only covers text area)
   &::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 80px; // Start after the lightbulb
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: var(--radius-xl);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
     z-index: 0;
   }
 }
 
 [data-theme="dark"] .daily-quote::before {
-  background: rgba(13, 17, 23, 0.85);
+  background: rgba(13, 17, 23, 0.9);
 }
 
 .quote-label {
@@ -654,8 +659,9 @@
     margin: 0;
     text-transform: uppercase;
     hyphens: none;
-    word-break: normal;
+    word-break: keep-all;
     overflow-wrap: normal;
+    white-space: nowrap;
 
     &::before {
       content: '"';
@@ -667,6 +673,7 @@
 
     @media (max-width: 640px) {
       font-size: var(--text-xl);
+      white-space: normal; // Allow wrapping on mobile
     }
   }
 }
