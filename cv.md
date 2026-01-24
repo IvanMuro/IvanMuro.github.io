@@ -18,10 +18,8 @@ permalink: /cv/
   </a>
 </p>
 
----
-
-## Current Position
-
+<section class="section">
+<h2 class="section-title">Current Position</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -34,11 +32,10 @@ permalink: /cv/
     </p>
   </div>
 </div>
+</section>
 
----
-
-## Education
-
+<section class="section">
+<h2 class="section-title">Education</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -74,11 +71,10 @@ permalink: /cv/
     </p>
   </div>
 </div>
+</section>
 
----
-
-## Awards & Funding
-
+<section class="section">
+<h2 class="section-title">Awards & Funding</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -98,11 +94,10 @@ permalink: /cv/
     <p class="cv-item-description">Early Stage Researcher of the Innovative Training Network "Big Data analytics for Black hole Evolution Studies" (grant agreement No 860744).</p>
   </div>
 </div>
+</section>
 
----
-
-## Industry Experience
-
+<section class="section">
+<h2 class="section-title">Industry Experience</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -126,11 +121,10 @@ permalink: /cv/
     </p>
   </div>
 </div>
+</section>
 
----
-
-## Collaborations
-
+<section class="section">
+<h2 class="section-title">Collaborations</h2>
 <div class="cv-section">
   <ul style="list-style: none; padding: 0;">
     <li style="margin-bottom: var(--space-3);"><strong>FornaX</strong> (2025–present) – X-ray cluster and AGN catalogue builder, ESA-datalabs moderator, LOC 2025</li>
@@ -140,11 +134,10 @@ permalink: /cv/
     <li><strong>CARMENES</strong> (2019–2020) – Exoplanet detection via radial velocities</li>
   </ul>
 </div>
+</section>
 
----
-
-## Technical Skills
-
+<section class="section">
+<h2 class="section-title">Technical Skills</h2>
 <div class="skills-grid">
   <div class="skill-category">
     <h4 class="skill-category-title">Programming & Tools</h4>
@@ -193,11 +186,10 @@ permalink: /cv/
     </ul>
   </div>
 </div>
+</section>
 
----
-
-## Student Supervision
-
+<section class="section">
+<h2 class="section-title">Student Supervision</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -229,11 +221,10 @@ permalink: /cv/
     </p>
   </div>
 </div>
+</section>
 
----
-
-## Outreach
-
+<section class="section">
+<h2 class="section-title">Outreach</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -270,11 +261,10 @@ permalink: /cv/
     </p>
   </div>
 </div>
+</section>
 
----
-
-## Selected Presentations
-
+<section class="section">
+<h2 class="section-title">Selected Presentations</h2>
 <div class="cv-section">
   <h4>Invited Talks</h4>
   <ul>
@@ -303,11 +293,10 @@ permalink: /cv/
     <li><strong>2022/06</strong> – EAS 2022, Valencia (Session S5e: X-ray surveys with Athena)</li>
   </ul>
 </div>
+</section>
 
----
-
-## References
-
+<section class="section">
+<h2 class="section-title">References</h2>
 <div class="cv-section">
   <ul style="list-style: none; padding: 0;">
     <li style="margin-bottom: var(--space-4);">
@@ -327,8 +316,7 @@ permalink: /cv/
     </li>
   </ul>
 </div>
-
----
+</section>
 
 <p style="margin-top: var(--space-8); color: var(--color-text-muted); font-size: var(--text-sm);">
   Last updated: January 2025

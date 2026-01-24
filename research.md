@@ -9,31 +9,44 @@ permalink: /research/
 
 I am an astrophysicist with expertise in the growth of **supermassive black holes (SMBHs)**, the evolution of galaxies and **Active Galactic Nuclei (AGN)** across cosmic time and different environments, as well as **X-ray cluster surveys**. My work bridges observations, simulations, and statistical modelling to improve how galaxies, AGN, and galaxy clusters are identified, characterised, and used as cosmological probes.
 
-## Research Areas
-
-### AGN in Galaxy Clusters
-
-My PhD research focused on understanding the cosmic evolution of AGN in massive galaxy clusters. Key questions include:
-
-- **AGN triggering mechanisms**: What drives AGN activity in dense cluster environments? Is there enhanced triggering in cluster outskirts?
-- **Environmental effects**: How does the cluster environment affect SMBH growth compared to the field?
-- **Simulations vs observations**: Developing semi-empirical models to compare theoretical predictions with observational data
-
-### X-ray Cluster Surveys
-
-Galaxy clusters are powerful cosmological probes. I work on:
-
-- **Cluster detection algorithms**: Developing and testing methods to identify clusters in X-ray surveys
-- **AGN contamination**: Understanding how AGN affect cluster detection and characterisation
-- **Selection criteria**: Defining robust selection functions for cluster catalogues
-
-### Semi-empirical Modelling
-
-I specialise in connecting theory to observations through:
-
-- **Population modelling**: Statistically sampling observational constraints to generate realistic SMBH populations
-- **Forward modelling**: Creating synthetic observations from simulations for direct comparison with data
-- **3D-to-2D projection**: Building tools for cosmological simulations with proper handling of boundary conditions
+<section class="section">
+<h2 class="section-title">Research Areas</h2>
+<div class="cv-section">
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">AGN in Galaxy Clusters</span>
+    </div>
+    <p class="cv-item-description">My PhD research focused on understanding the cosmic evolution of AGN in massive galaxy clusters. Key questions include:</p>
+    <ul class="cv-item-description">
+      <li><strong>AGN triggering mechanisms</strong>: What drives AGN activity in dense cluster environments? Is there enhanced triggering in cluster outskirts?</li>
+      <li><strong>Environmental effects</strong>: How does the cluster environment affect SMBH growth compared to the field?</li>
+      <li><strong>Simulations vs observations</strong>: Developing semi-empirical models to compare theoretical predictions with observational data</li>
+    </ul>
+  </div>
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">X-ray Cluster Surveys</span>
+    </div>
+    <p class="cv-item-description">Galaxy clusters are powerful cosmological probes. I work on:</p>
+    <ul class="cv-item-description">
+      <li><strong>Cluster detection algorithms</strong>: Developing and testing methods to identify clusters in X-ray surveys</li>
+      <li><strong>AGN contamination</strong>: Understanding how AGN affect cluster detection and characterisation</li>
+      <li><strong>Selection criteria</strong>: Defining robust selection functions for cluster catalogues</li>
+    </ul>
+  </div>
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">Semi-empirical Modelling</span>
+    </div>
+    <p class="cv-item-description">I specialise in connecting theory to observations through:</p>
+    <ul class="cv-item-description">
+      <li><strong>Population modelling</strong>: Statistically sampling observational constraints to generate realistic SMBH populations</li>
+      <li><strong>Forward modelling</strong>: Creating synthetic observations from simulations for direct comparison with data</li>
+      <li><strong>3D-to-2D projection</strong>: Building tools for cosmological simulations with proper handling of boundary conditions</li>
+    </ul>
+  </div>
+</div>
+</section>
 
 <section class="section">
 <h2 class="section-title">Current Projects</h2>

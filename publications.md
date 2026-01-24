@@ -22,10 +22,8 @@ permalink: /publications/
   ORCID: <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener">{{ site.author.orcid }}</a>
 </p>
 
----
-
-## First-Author Publications
-
+<section class="section">
+<h2 class="section-title">First-Author Publications</h2>
 <ul class="publication-list">
   <li class="publication-item">
     <h3 class="publication-title">
@@ -63,11 +61,10 @@ permalink: /publications/
     </div>
   </li>
 </ul>
+</section>
 
----
-
-## In Preparation
-
+<section class="section">
+<h2 class="section-title">In Preparation</h2>
 <ul class="publication-list">
   <li class="publication-item">
     <h3 class="publication-title">
@@ -87,11 +84,10 @@ permalink: /publications/
     </p>
   </li>
 </ul>
+</section>
 
----
-
-## Co-Authored Publications
-
+<section class="section">
+<h2 class="section-title">Co-Authored Publications</h2>
 <ul class="publication-list">
   <li class="publication-item">
     <h3 class="publication-title">
@@ -183,8 +179,7 @@ permalink: /publications/
     </div>
   </li>
 </ul>
-
----
+</section>
 
 <div style="margin-top: var(--space-8); padding: var(--space-6); background-color: var(--color-bg-alt); border-radius: var(--radius-lg);">
   <h3 style="margin-top: 0; font-size: var(--text-lg);">Publication Metrics</h3>
