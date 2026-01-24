@@ -5,7 +5,7 @@ subtitle: Get in touch for research collaborations or inquiries
 permalink: /contact/
 ---
 
-<div class="page-content">
+<div class="page-content" markdown="1">
 
 I'm always happy to discuss potential collaborations, research ideas, or opportunities. Feel free to reach out through any of the channels below.
 
@@ -69,11 +69,9 @@ I'm always happy to discuss potential collaborations, research ideas, or opportu
 
 </div>
 
----
-
-## Institutional Address
-
-<div style="margin-top: var(--space-4); padding: var(--space-5); background-color: var(--color-bg-alt); border-radius: var(--radius-lg);">
+<section class="section">
+<h2 class="section-title">Institutional Address</h2>
+<div style="padding: var(--space-5); background-color: var(--color-bg-alt); border-radius: var(--radius-lg);">
   <p style="margin: 0; font-size: var(--text-sm);">
     <strong>{{ site.author.name }}</strong><br>
     {{ site.author.department }}<br>
@@ -82,41 +80,40 @@ I'm always happy to discuss potential collaborations, research ideas, or opportu
     91191 Gif-sur-Yvette, France
   </p>
 </div>
+</section>
 
----
+<section class="section">
+<h2 class="section-title">Research Collaboration</h2>
+<p>I'm particularly interested in collaborations involving:</p>
+<ul>
+  <li><strong>AGN in galaxy clusters</strong> – environmental effects on SMBH growth, AGN triggering mechanisms</li>
+  <li><strong>X-ray cluster surveys</strong> – cluster detection, AGN contamination, selection functions</li>
+  <li><strong>Semi-empirical modelling</strong> – connecting simulations to observations</li>
+  <li><strong>Multi-wavelength studies</strong> – combining X-ray with optical/IR data (Euclid, etc.)</li>
+</ul>
+<p>If your work intersects with any of these areas, I'd be happy to discuss potential synergies.</p>
+</section>
 
-## Research Collaboration
+<section class="section">
+<h2 class="section-title">For Students</h2>
+<p>If you're a master's or PhD student interested in AGN, galaxy clusters, or data science applications in astronomy, feel free to reach out. I'm happy to discuss:</p>
+<ul>
+  <li>Potential research project ideas</li>
+  <li>Career paths in astrophysics (including industry transitions)</li>
+  <li>Technical questions about data analysis and statistical modelling</li>
+</ul>
+</section>
 
-I'm particularly interested in collaborations involving:
-
-- **AGN in galaxy clusters** – environmental effects on SMBH growth, AGN triggering mechanisms
-- **X-ray cluster surveys** – cluster detection, AGN contamination, selection functions
-- **Semi-empirical modelling** – connecting simulations to observations
-- **Multi-wavelength studies** – combining X-ray with optical/IR data (Euclid, etc.)
-
-If your work intersects with any of these areas, I'd be happy to discuss potential synergies.
-
----
-
-## For Students
-
-If you're a master's or PhD student interested in AGN, galaxy clusters, or data science applications in astronomy, feel free to reach out. I'm happy to discuss:
-
-- Potential research project ideas
-- Career paths in astrophysics (including industry transitions)
-- Technical questions about data analysis and statistical modelling
-
----
-
-## Speaking & Outreach
-
-I'm available for:
-
-- Conference and seminar talks
-- Public outreach events
-- Podcast appearances (particularly on topics related to X-ray astronomy, cosmology, or the philosophy of science)
-- Science communication collaborations
-
-Please get in touch via email to discuss opportunities.
+<section class="section">
+<h2 class="section-title">Speaking & Outreach</h2>
+<p>I'm available for:</p>
+<ul>
+  <li>Conference and seminar talks</li>
+  <li>Public outreach events</li>
+  <li>Podcast appearances (particularly on topics related to X-ray astronomy, cosmology, or the philosophy of science)</li>
+  <li>Science communication collaborations</li>
+</ul>
+<p>Please get in touch via email to discuss opportunities.</p>
+</section>
 
 </div>
