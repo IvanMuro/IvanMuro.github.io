@@ -607,24 +607,23 @@
   background-position: 10px center; // Position on the left with small margin
   background-repeat: no-repeat;
   min-height: 100px;
-  max-width: 100%;
 
-  // Semi-transparent overlay for text readability (only covers text area)
+  // Semi-transparent overlay for text readability
   &::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 80px; // Start after the lightbulb
+    left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.9) 80px, rgba(255, 255, 255, 0.9) 100%);
+    border-radius: var(--radius-xl);
     z-index: 0;
   }
 }
 
 [data-theme="dark"] .daily-quote::before {
-  background: rgba(13, 17, 23, 0.9);
+  background: linear-gradient(to right, rgba(13, 17, 23, 0.3) 0%, rgba(13, 17, 23, 0.9) 80px, rgba(13, 17, 23, 0.9) 100%);
 }
 
 .quote-label {
