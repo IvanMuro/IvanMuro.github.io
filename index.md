@@ -116,10 +116,10 @@ show_title: false
     <div class="cv-item">
       <div class="cv-item-header">
         <span class="cv-item-title">ESO Visitor Programme</span>
-        <span class="cv-item-date">2022</span>
+        <span class="cv-item-date">2024</span>
       </div>
       <p class="cv-item-subtitle">European Southern Observatory, Garching</p>
-      <p class="cv-item-description">Awarded 3-month funding to study the radial distribution of ~80 clusters at intermediate redshift and design an AGN follow-up program.</p>
+      <p class="cv-item-description">Awarded 3-month internship to study the radial distribution of ~80 clusters at intermediate redshift and design an AGN follow-up program.</p>
     </div>
   </div>
 </section>
