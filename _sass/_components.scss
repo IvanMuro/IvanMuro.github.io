@@ -596,14 +596,32 @@
 
 .daily-quote {
   padding: var(--space-6);
-  background: linear-gradient(
-    135deg,
-    var(--color-bg-alt) 0%,
-    var(--color-bg-subtle) 100%
-  );
   border-radius: var(--radius-xl);
   margin: var(--space-8) 0;
   position: relative;
+  background-image: url('/assets/images/light_bulb.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  // Semi-transparent overlay for text readability
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+  }
+
+  [data-theme="dark"] & {
+    &::before {
+      background: rgba(13, 17, 23, 0.8);
+    }
+  }
 }
 
 .quote-label {
@@ -615,6 +633,8 @@
   margin-bottom: var(--space-2);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
 }
 
 .quote-text {
@@ -625,6 +645,8 @@
   margin: 0;
   font-style: normal;
   color: inherit;
+  position: relative;
+  z-index: 1;
 
   p {
     font-family: var(--font-handwritten);
