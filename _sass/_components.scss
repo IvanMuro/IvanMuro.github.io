@@ -595,7 +595,7 @@
 // ============================================
 
 .daily-quote {
-  display: block;
+  display: table; // Shrink-to-fit behavior while allowing line breaks
   padding: var(--space-6);
   padding-left: 100px; // Make room for lightbulb on the left
   border-radius: var(--radius-xl);
@@ -607,7 +607,7 @@
   background-position: 10px center; // Position on the left with small margin
   background-repeat: no-repeat;
   min-height: 100px;
-  max-width: 700px; // Constrain width on desktop for better readability
+  max-width: 100%; // Don't exceed container width
 
   // Semi-transparent overlay for text readability
   &::before {
