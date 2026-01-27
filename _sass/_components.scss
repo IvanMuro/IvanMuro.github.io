@@ -675,6 +675,130 @@
 
 
 // ============================================
+// Research Path Timeline (GitHub-style)
+// ============================================
+
+.research-timeline {
+  position: relative;
+  padding-left: 32px;
+
+  // Vertical line (the "branch")
+  &::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: var(--color-border);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--space-6);
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  // The node (commit dot)
+  &::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-border);
+    z-index: 1;
+  }
+
+  // Highlight current position with filled dot
+  &.timeline-current::before {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  // Major milestones get a larger dot
+  &.timeline-major::before {
+    width: 16px;
+    height: 16px;
+    left: -34px;
+    top: 4px;
+    border-width: 3px;
+  }
+}
+
+.timeline-date {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  background-color: var(--color-bg-alt);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-2);
+}
+
+.timeline-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.timeline-location {
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.timeline-description {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: var(--leading-relaxed);
+}
+
+// Dark mode adjustments
+[data-theme="dark"] {
+  .timeline-item::before {
+    background-color: var(--color-bg);
+  }
+
+  .timeline-item.timeline-current::before {
+    background-color: var(--color-primary);
+  }
+}
+
+// Mobile adjustments
+@media (max-width: 640px) {
+  .research-timeline {
+    padding-left: 24px;
+
+    &::before {
+      left: 7px;
+    }
+  }
+
+  .timeline-item::before {
+    left: -24px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-item.timeline-major::before {
+    width: 14px;
+    height: 14px;
+    left: -26px;
+  }
+}
+
+
+// ============================================
 // Print Styles
 // ============================================
 

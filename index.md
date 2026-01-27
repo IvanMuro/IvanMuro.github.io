@@ -95,31 +95,49 @@ show_title: false
 </section>
 
 <section class="section">
-  <h2 class="section-title">Latest News</h2>
-  <div class="cv-section">
-    <div class="cv-item">
-      <div class="cv-item-header">
-        <span class="cv-item-title">Postdoctoral Researcher at CEA Paris-Saclay</span>
-        <span class="cv-item-date">January 2025</span>
-      </div>
-      <p class="cv-item-subtitle">Astrophysics Department (DAp)</p>
-      <p class="cv-item-description">Started a new position working on X-ray cluster surveys and AGN catalogues for the FornaX project.</p>
+  <h2 class="section-title">Research Path</h2>
+  <div class="research-timeline">
+    <div class="timeline-item timeline-major">
+      <span class="timeline-date">2014 – 2019</span>
+      <h3 class="timeline-title">B.Sc. in Physics</h3>
+      <p class="timeline-location">University of Salamanca, Spain</p>
+      <p class="timeline-description">Thesis on astronomical bounds of Primordial Black Holes.</p>
     </div>
-    <div class="cv-item">
-      <div class="cv-item-header">
-        <span class="cv-item-title">PhD Defence</span>
-        <span class="cv-item-date">August 2024</span>
-      </div>
-      <p class="cv-item-subtitle">National Observatory of Athens & University of Southampton</p>
-      <p class="cv-item-description">Successfully defended PhD thesis on "Semi-empirical models of X-ray AGN in galaxy clusters".</p>
+    <div class="timeline-item">
+      <span class="timeline-date">2019 – 2020</span>
+      <h3 class="timeline-title">M.Sc. in Astronomy</h3>
+      <p class="timeline-location">University of Granada, Spain</p>
+      <p class="timeline-description">CARMENES collaboration. Thesis on exoplanet detectability and occurrence rates.</p>
     </div>
-    <div class="cv-item">
-      <div class="cv-item-header">
-        <span class="cv-item-title">ESO Visitor Programme</span>
-        <span class="cv-item-date">2024</span>
-      </div>
-      <p class="cv-item-subtitle">European Southern Observatory, Garching</p>
-      <p class="cv-item-description">Awarded 3-month internship to study the radial distribution of ~80 clusters at intermediate redshift and design an AGN follow-up program.</p>
+    <div class="timeline-item timeline-major">
+      <span class="timeline-date">Oct 2020</span>
+      <h3 class="timeline-title">Marie Curie PhD Fellow</h3>
+      <p class="timeline-location">NOA Athens & University of Southampton</p>
+      <p class="timeline-description">Started PhD on semi-empirical models of X-ray AGN in galaxy clusters (BiD4BESt ITN).</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2022</span>
+      <h3 class="timeline-title">ESO Visitor Programme</h3>
+      <p class="timeline-location">European Southern Observatory, Garching</p>
+      <p class="timeline-description">3-month research visit studying the radial distribution of AGN in ~80 clusters.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2022</span>
+      <h3 class="timeline-title">Joined Euclid Consortium</h3>
+      <p class="timeline-location">SWG Clusters & Galaxy Evolution</p>
+      <p class="timeline-description">Contributing to multi-wavelength cluster science.</p>
+    </div>
+    <div class="timeline-item timeline-major">
+      <span class="timeline-date">Aug 2024</span>
+      <h3 class="timeline-title">PhD Defence</h3>
+      <p class="timeline-location">NOA Athens & University of Southampton</p>
+      <p class="timeline-description">Successfully defended thesis: "Semi-empirical models of X-ray AGN in galaxy clusters".</p>
+    </div>
+    <div class="timeline-item timeline-current timeline-major">
+      <span class="timeline-date">Jan 2025 – Present</span>
+      <h3 class="timeline-title">Postdoctoral Researcher</h3>
+      <p class="timeline-location">CEA Paris-Saclay, Astrophysics Department</p>
+      <p class="timeline-description">Building X-ray cluster and AGN catalogues for the FornaX Euclid deep field.</p>
     </div>
   </div>
 </section>
