@@ -774,8 +774,9 @@
 // Timeline image (right side)
 .timeline-image {
   flex-shrink: 0;
-  width: 100px;
-  height: 80px;
+  width: 140px;
+  align-self: stretch; // Stretch to full height of card
+  min-height: 100px;
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: var(--color-bg-subtle);
