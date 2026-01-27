@@ -97,47 +97,82 @@ show_title: false
 <section class="section">
   <h2 class="section-title">Research Path</h2>
   <div class="research-timeline">
-    <div class="timeline-item timeline-major">
-      <span class="timeline-date">2014 – 2019</span>
-      <h3 class="timeline-title">B.Sc. in Physics</h3>
-      <p class="timeline-location">University of Salamanca, Spain</p>
-      <p class="timeline-description">Thesis on astronomical bounds of Primordial Black Holes.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-date">2019 – 2020</span>
-      <h3 class="timeline-title">M.Sc. in Astronomy</h3>
-      <p class="timeline-location">University of Granada, Spain</p>
-      <p class="timeline-description">CARMENES collaboration. Thesis on exoplanet detectability and occurrence rates.</p>
-    </div>
-    <div class="timeline-item timeline-major">
-      <span class="timeline-date">Oct 2020</span>
-      <h3 class="timeline-title">Marie Curie PhD Fellow</h3>
-      <p class="timeline-location">NOA Athens & University of Southampton</p>
-      <p class="timeline-description">Started PhD on semi-empirical models of X-ray AGN in galaxy clusters (BiD4BESt ITN).</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-date">2022</span>
-      <h3 class="timeline-title">ESO Visitor Programme</h3>
-      <p class="timeline-location">European Southern Observatory, Garching</p>
-      <p class="timeline-description">3-month research visit studying the radial distribution of AGN in ~80 clusters.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-date">2022</span>
-      <h3 class="timeline-title">Joined Euclid Consortium</h3>
-      <p class="timeline-location">SWG Clusters & Galaxy Evolution</p>
-      <p class="timeline-description">Contributing to multi-wavelength cluster science.</p>
-    </div>
-    <div class="timeline-item timeline-major">
-      <span class="timeline-date">Aug 2024</span>
-      <h3 class="timeline-title">PhD Defence</h3>
-      <p class="timeline-location">NOA Athens & University of Southampton</p>
-      <p class="timeline-description">Successfully defended thesis: "Semi-empirical models of X-ray AGN in galaxy clusters".</p>
-    </div>
     <div class="timeline-item timeline-current timeline-major">
-      <span class="timeline-date">Jan 2025 – Present</span>
-      <h3 class="timeline-title">Postdoctoral Researcher</h3>
-      <p class="timeline-location">CEA Paris-Saclay, Astrophysics Department</p>
-      <p class="timeline-description">Building X-ray cluster and AGN catalogues for the FornaX Euclid deep field.</p>
+      <div class="timeline-content">
+        <span class="timeline-date">Jan 2025 – Present</span>
+        <h3 class="timeline-title">Postdoctoral Researcher</h3>
+        <p class="timeline-location">CEA Paris-Saclay, Astrophysics Department</p>
+        <p class="timeline-description">Building X-ray cluster and AGN catalogues for the FornaX Euclid deep field.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/cea.jpg' | relative_url }}" alt="CEA Paris-Saclay" onerror="this.parentElement.innerHTML='🔬'">
+      </div>
+    </div>
+    <div class="timeline-item timeline-major">
+      <div class="timeline-content">
+        <span class="timeline-date">Aug 2024</span>
+        <h3 class="timeline-title">PhD Defence</h3>
+        <p class="timeline-location">NOA Athens & University of Southampton</p>
+        <p class="timeline-description">Successfully defended thesis: "Semi-empirical models of X-ray AGN in galaxy clusters".</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="PhD Defence" onerror="this.parentElement.innerHTML='🎓'">
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2022</span>
+        <h3 class="timeline-title">Joined Euclid Consortium</h3>
+        <p class="timeline-location">SWG Clusters & Galaxy Evolution</p>
+        <p class="timeline-description">Contributing to multi-wavelength cluster science.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/euclid.jpg' | relative_url }}" alt="Euclid" onerror="this.parentElement.innerHTML='🛰️'">
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2022</span>
+        <h3 class="timeline-title">ESO Visitor Programme</h3>
+        <p class="timeline-location">European Southern Observatory, Garching</p>
+        <p class="timeline-description">3-month research visit studying the radial distribution of AGN in ~80 clusters.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/eso.jpg' | relative_url }}" alt="ESO Garching" onerror="this.parentElement.innerHTML='🔭'">
+      </div>
+    </div>
+    <div class="timeline-item timeline-major">
+      <div class="timeline-content">
+        <span class="timeline-date">Oct 2020</span>
+        <h3 class="timeline-title">Marie Curie PhD Fellow</h3>
+        <p class="timeline-location">NOA Athens & University of Southampton</p>
+        <p class="timeline-description">Started PhD on semi-empirical models of X-ray AGN in galaxy clusters (BiD4BESt ITN).</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/noa.jpg' | relative_url }}" alt="NOA Athens" onerror="this.parentElement.innerHTML='🇬🇷'">
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2019 – 2020</span>
+        <h3 class="timeline-title">M.Sc. in Astronomy</h3>
+        <p class="timeline-location">University of Granada, Spain</p>
+        <p class="timeline-description">CARMENES collaboration. Thesis on exoplanet detectability and occurrence rates.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/granada.jpg' | relative_url }}" alt="Granada" onerror="this.parentElement.innerHTML='🌌'">
+      </div>
+    </div>
+    <div class="timeline-item timeline-major">
+      <div class="timeline-content">
+        <span class="timeline-date">2014 – 2019</span>
+        <h3 class="timeline-title">B.Sc. in Physics</h3>
+        <p class="timeline-location">University of Salamanca, Spain</p>
+        <p class="timeline-description">Thesis on astronomical bounds of Primordial Black Holes.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="{{ '/assets/images/timeline/salamanca.jpg' | relative_url }}" alt="Salamanca" onerror="this.parentElement.innerHTML='⚛️'">
+      </div>
     </div>
   </div>
 </section>

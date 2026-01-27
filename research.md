@@ -109,7 +109,7 @@ I am an astrophysicist with expertise in the growth of **supermassive black hole
   <div class="cv-item">
     <div class="cv-item-header">
       <span class="cv-item-title">Centro Astronómico de Tiedra</span>
-      <span class="cv-item-date">Summers 2019, 2021, 2022</span>
+      <span class="cv-item-date">Collaborator since 2019</span>
     </div>
     <p class="cv-item-description">Support astronomer delivering live scientific presentations to non-technical audiences, operating observation and planetarium equipment during public events.</p>
   </div>
