@@ -13,7 +13,7 @@ show_title: false
       I am an astrophysicist with expertise in the growth of supermassive black holes, the evolution of galaxies and Active Galactic Nuclei (AGN) across cosmic time and different environments, as well as X-ray cluster surveys. My work bridges observations, simulations, and statistical modelling to improve how galaxies, AGN, and galaxy clusters are identified and characterised.
     </p>
     <p class="hero-description">
-      Beyond research, I find balance through rock climbing and trail running in the mountains—activities that mirror the patience and persistence required in science. I'm also drawn to philosophy of science and science communication, co-hosting the <a href="#">"Pilgrims of the Kosmos"</a> podcast.
+      Beyond research, I am deeply interested in physiology, nutrition and sport science. You can also find me running in the mountain or reading.
     </p>
     <div class="hero-links">
       <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">
@@ -51,9 +51,9 @@ show_title: false
     <li class="keyword-item">Supermassive Black Holes</li>
     <li class="keyword-item">Cluster Detection Algorithms</li>
     <li class="keyword-item">Semi-empirical Modelling</li>
-    <li class="keyword-item">XMM-Newton</li>
     <li class="keyword-item">Statistical Modelling</li>
     <li class="keyword-item">Large-scale Simulations</li>
+    <li class="keyword-item">Artificial Inteligence</li>
   </ul>
 </section>
 
@@ -63,7 +63,7 @@ show_title: false
     <article class="project-card">
       <h3 class="project-title">FornaX</h3>
       <p class="project-description">
-        Building X-ray cluster and AGN catalogues of the FornaX Euclid deep field. Moderator of the ESA-datalabs & Slack channel, and LOC member for the 2025 Annual Meeting.
+        Building X-ray cluster and AGN catalogues of the FornaX Euclid deep field.
       </p>
       <div class="project-tags">
         <span class="tag">Euclid</span>
@@ -73,7 +73,7 @@ show_title: false
     <article class="project-card">
       <h3 class="project-title">Euclid Consortium</h3>
       <p class="project-description">
-        Active member of the Science Working Groups for Clusters of Galaxies and Galaxy Evolution, contributing to multi-wavelength cluster science.
+        Active member of the Science Working Groups for Clusters of Galaxies and Galaxy Evolution, contributing to multi-wavelength cluster science and AGN research.
       </p>
       <div class="project-tags">
         <span class="tag">Euclid</span>
@@ -117,17 +117,6 @@ show_title: false
       </div>
       <div class="timeline-image">
         <img src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="PhD Defence" onerror="this.parentElement.innerHTML='🎓'">
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-date">2022</span>
-        <h3 class="timeline-title">Joined Euclid Consortium</h3>
-        <p class="timeline-location">SWG Clusters & Galaxy Evolution</p>
-        <p class="timeline-description">Contributing to multi-wavelength cluster science.</p>
-      </div>
-      <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/euclid.jpg' | relative_url }}" alt="Euclid" onerror="this.parentElement.innerHTML='🛰️'">
       </div>
     </div>
     <div class="timeline-item">
