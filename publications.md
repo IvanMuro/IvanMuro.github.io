@@ -89,6 +89,21 @@ permalink: /publications/
 <section class="section">
 <h2 class="section-title">Co-Authored Publications</h2>
 <ul class="publication-list">
+
+<li class="publication-item">
+    <h3 class="publication-title">
+      <a href="" target="_blank" rel="noopener">
+        Data Representation Matters: Optimizing Machine Learning for X-ray Source Classification by Leveraging Spatio-Spectral Information
+      </a>
+    </h3>
+    <p class="publication-authors">
+      Fu H., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
+    </p>
+    <p class="publication-venue">(Submitted)</p>
+    <div class="publication-links">
+      <a href="" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </li>
   <li class="publication-item">
     <h3 class="publication-title">
       <a href="https://doi.org/10.1051/0004-6361/202556480" target="_blank" rel="noopener">
