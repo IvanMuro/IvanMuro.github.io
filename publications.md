@@ -97,7 +97,7 @@ permalink: /publications/
       </a>
     </h3>
     <p class="publication-authors">
-      Fu H., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
+      Lieu M., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
     <p class="publication-venue">(Submitted)</p>
     <div class="publication-links">
