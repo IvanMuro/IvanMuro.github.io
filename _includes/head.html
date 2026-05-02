@@ -49,6 +49,9 @@
   "sameAs": [
     "https://orcid.org/{{ site.author.orcid }}",
     "https://github.com/{{ site.author.github }}"
+    {% if site.author.linkedin %},
+    "{{ site.author.linkedin }}"
+    {% endif %}
     {% if site.author.google_scholar %},
     "{{ site.author.google_scholar }}"
     {% endif %}
