@@ -283,6 +283,7 @@ permalink: /cv/
 
   <h4 style="margin-top: var(--space-6);">Contributed Talks</h4>
   <ul>
+    <li><strong>2025/07</strong> – "Clustbusters: Chasing clusters in the FornaX Euclid-XMM Heritage Deep Field", Euclid France Annual meeting, Strasbourg</li>
     <li><strong>2025/07</strong> – "AGN contamination on cluster detection", Madonna di Campiglio</li>
     <li><strong>2025/07</strong> – "Brief introduction to ASTROMATCH", Madonna di Campiglio</li>
     <li><strong>2025/07</strong> – "Pipeline and source list of the central FornaX square degree", Madonna di Campiglio</li>
@@ -302,24 +303,21 @@ permalink: /cv/
     <li style="margin-bottom: var(--space-4);">
       <strong>Dr. Antonis Georgakakis</strong><br>
       Research Director, National Observatory of Athens. PI of TALES.<br>
-      <a href="mailto:age@noa.gr">age@noa.gr</a>
     </li>
     <li style="margin-bottom: var(--space-4);">
       <strong>Dr. Marguerite Pierre</strong><br>
       Permanent Researcher, CEA Paris-Saclay. PI of FornaX, XMM-XXL, XMM-LSS.<br>
-      <a href="mailto:marguerite.pierre@cea.fr">marguerite.pierre@cea.fr</a>
     </li>
     <li>
       <strong>Prof. Francesco Shankar</strong><br>
       Professor of Astrophysics, University of Southampton. PI of BiD4BESt.<br>
-      <a href="mailto:f.shankar@soton.ac.uk">f.shankar@soton.ac.uk</a>
     </li>
   </ul>
 </div>
 </section>
 
 <p style="margin-top: var(--space-8); color: var(--color-text-muted); font-size: var(--text-sm);">
-  Last updated: January 2025
+  Last updated: May 2025
 </p>
 
 </div>
