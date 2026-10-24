@@ -37,6 +37,9 @@
   --gradient-title: linear-gradient(120deg, #1a202c 20%, #2c5282 100%);
   --glow-a: rgba(44, 82, 130, 0.10);
   --glow-b: rgba(192, 86, 33, 0.07);
+  --gradient-line: linear-gradient(to bottom, #2c5282 0%, #4a6fa5 55%, #c05621 88%, transparent 100%);
+  --line-spark: rgba(255, 255, 255, 0.95);
+  --shadow-glow: rgba(26, 54, 93, 0.25);   // faint tint under primary buttons
 
   // Shadows
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -74,6 +77,9 @@
   --gradient-title: linear-gradient(120deg, #e6edf3 30%, #7ee787 100%);
   --glow-a: rgba(46, 160, 67, 0.10);
   --glow-b: rgba(88, 166, 255, 0.07);
+  --gradient-line: linear-gradient(to bottom, #3fd15a 0%, #2ea043 50%, #3b82c4 88%, transparent 100%);
+  --line-spark: #d2ffdc;
+  --shadow-glow: rgba(46, 160, 67, 0.22);
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
