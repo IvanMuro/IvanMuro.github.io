@@ -24,6 +24,11 @@ body {
   line-height: var(--leading-relaxed);
   color: var(--color-text);
   background-color: var(--color-bg);
+  // Two soft "nebula" glows at the top of every page
+  background-image:
+    radial-gradient(1100px 520px at 90% -8%, var(--glow-a), transparent 65%),
+    radial-gradient(800px 480px at -12% 6%, var(--glow-b), transparent 65%);
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

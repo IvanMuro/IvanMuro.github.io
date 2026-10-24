@@ -28,6 +28,16 @@
   --color-link: #2b6cb0;
   --color-link-hover: #1a365d;
 
+  // Soft tints and accents used for chips, pills and glows
+  --color-primary-strong: #1a365d;    // Readable primary for text
+  --color-primary-soft: rgba(44, 82, 130, 0.09);
+  --color-accent-strong: #b2501f;
+  --color-accent-soft: rgba(192, 86, 33, 0.10);
+  --gradient-brand: linear-gradient(135deg, #1a365d 0%, #2c5282 60%, #c05621 140%);
+  --gradient-title: linear-gradient(120deg, #1a202c 20%, #2c5282 100%);
+  --glow-a: rgba(44, 82, 130, 0.10);
+  --glow-b: rgba(192, 86, 33, 0.07);
+
   // Shadows
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -55,6 +65,15 @@
 
   --color-link: #58a6ff;
   --color-link-hover: #79c0ff;
+
+  --color-primary-strong: #3fd15a;
+  --color-primary-soft: rgba(46, 160, 67, 0.15);
+  --color-accent-strong: #3fd15a;
+  --color-accent-soft: rgba(46, 160, 67, 0.15);
+  --gradient-brand: linear-gradient(135deg, #1f9e3a 0%, #2ea043 55%, #3b82c4 140%);
+  --gradient-title: linear-gradient(120deg, #e6edf3 30%, #7ee787 100%);
+  --glow-a: rgba(46, 160, 67, 0.10);
+  --glow-b: rgba(88, 166, 255, 0.07);
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
