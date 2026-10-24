@@ -487,18 +487,6 @@
   position: relative;
   isolation: isolate;
 
-  // Gradient frame peeking out behind the photo
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    transform: translate(14px, 14px) rotate(3deg);
-    border-radius: 28px;
-    background: var(--gradient-brand);
-    opacity: 0.85;
-    z-index: -1;
-  }
-
   // Soft glow
   &::after {
     content: '';

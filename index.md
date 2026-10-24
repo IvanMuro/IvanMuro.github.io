@@ -124,7 +124,7 @@ show_title: false
     </div>
     <div class="timeline-item">
       <div class="timeline-content">
-        <span class="timeline-date">2022</span>
+        <span class="timeline-date">2024</span>
         <h3 class="timeline-title">ESO Visitor Programme</h3>
         <p class="timeline-location">European Southern Observatory, Garching</p>
         <p class="timeline-description">3-month research visit studying the radial distribution of AGN in ~80 clusters.</p>

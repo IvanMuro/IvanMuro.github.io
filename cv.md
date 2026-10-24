@@ -79,7 +79,7 @@ permalink: /cv/
   <div class="cv-item">
     <div class="cv-item-header">
       <span class="cv-item-title">ESO-Garching Visitor Programme</span>
-      <span class="cv-item-date">2022</span>
+      <span class="cv-item-date">2024</span>
     </div>
     <p class="cv-item-subtitle">European Southern Observatory, Garching</p>
     <p class="cv-item-description">Awarded 3-month funding to study the radial distribution of ~80 clusters at intermediate redshift z ~ 0.2-0.8 and design a follow-up program to characterise AGN membership.</p>

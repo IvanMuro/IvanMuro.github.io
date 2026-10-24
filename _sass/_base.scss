@@ -76,6 +76,20 @@ p {
   max-width: 65ch;
 }
 
+// Justify body text (not labels, titles or the quote). Phones keep left
+// alignment, because justified text in a narrow column leaves big gaps.
+@media (min-width: 641px) {
+  .hero-description,
+  .project-description,
+  .timeline-description,
+  .page-content p,
+  .page-content li {
+    text-align: justify;
+    hyphens: auto; // avoids large gaps between words in justified lines
+    -webkit-hyphens: auto;
+  }
+}
+
 // Links
 a {
   color: var(--color-link);
