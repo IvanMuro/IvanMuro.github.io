@@ -252,13 +252,13 @@ permalink: /cv/
     <div class="cv-item-header">
       <span class="cv-item-title">Publications</span>
     </div>
-    <p class="cv-item-description">
+    <div class="cv-item-description">
       <ul>
         <li>September 2022: Article in "Astronomía" magazine on AGN (Spanish)</li>
         <li>July 2022: HIPPARCHOS (Hellenic Astronomical Society), Vol. 3, Issue 5, pp. 17-21</li>
         <li>December 2020: Outreach talk on exoplanet detection via radial velocities</li>
       </ul>
-    </p>
+    </div>
   </div>
 </div>
 </section>
@@ -317,7 +317,7 @@ permalink: /cv/
 </section>
 
 <p style="margin-top: var(--space-8); color: var(--color-text-muted); font-size: var(--text-sm);">
-  Last updated: May 2025
+  Last updated: October 2026
 </p>
 
 </div>

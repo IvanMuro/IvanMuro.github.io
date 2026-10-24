@@ -609,6 +609,13 @@
   min-height: 100px;
   max-width: 100%; // Don't exceed container width
 
+  @media (max-width: 640px) {
+    padding: var(--space-4);
+    padding-left: 72px;
+    background-size: 56px auto;
+    background-position: 8px center;
+  }
+
   // Semi-transparent overlay for text readability
   &::before {
     content: '';

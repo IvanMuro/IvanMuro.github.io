@@ -13,7 +13,7 @@ show_title: false
       I am an astrophysicist with expertise in the growth of supermassive black holes, the evolution of galaxies and Active Galactic Nuclei (AGN) across cosmic time and different environments, as well as X-ray cluster surveys. My work bridges observations, simulations, and statistical modelling to improve how galaxies, AGN, and galaxy clusters are identified and characterised.
     </p>
     <p class="hero-description">
-      Beyond research, I am deeply interested in physiology, nutrition and sport science. You can also find me running in the mountain or reading.
+      Beyond research, I am deeply interested in physiology, nutrition and sport science. You can also find me running in the mountains or reading.
     </p>
     <div class="hero-links">
       <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">
@@ -35,6 +35,9 @@ show_title: false
       src="{{ '/assets/images/profile.jpg' | relative_url }}"
       alt="Dr. Iván Muñoz Rodríguez"
       class="hero-image"
+      width="800"
+      height="800"
+      fetchpriority="high"
       onerror="this.style.background='linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-bg-alt) 100%)'"
     >
   </div>
@@ -53,7 +56,7 @@ show_title: false
     <li class="keyword-item">Semi-empirical Modelling</li>
     <li class="keyword-item">Statistical Modelling</li>
     <li class="keyword-item">Large-scale Simulations</li>
-    <li class="keyword-item">Artificial Inteligence</li>
+    <li class="keyword-item">Artificial Intelligence</li>
   </ul>
 </section>
 
@@ -105,7 +108,7 @@ show_title: false
         <p class="timeline-description">Building X-ray cluster and AGN catalogues for the FornaX Euclid deep field.</p>
       </div>
       <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/cea.jpg' | relative_url }}" alt="CEA Paris-Saclay" onerror="this.parentElement.innerHTML='🔬'">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/cea.jpg' | relative_url }}" alt="CEA Paris-Saclay" onerror="this.parentElement.innerHTML='🔬'">
       </div>
     </div>
     <div class="timeline-item timeline-major">
@@ -116,7 +119,7 @@ show_title: false
         <p class="timeline-description">Successfully defended thesis: "Semi-empirical models of X-ray AGN in galaxy clusters".</p>
       </div>
       <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="PhD Defence" onerror="this.parentElement.innerHTML='🎓'">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="PhD Defence" onerror="this.parentElement.innerHTML='🎓'">
       </div>
     </div>
     <div class="timeline-item">
@@ -127,7 +130,7 @@ show_title: false
         <p class="timeline-description">3-month research visit studying the radial distribution of AGN in ~80 clusters.</p>
       </div>
       <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/eso.jpg' | relative_url }}" alt="ESO Garching" onerror="this.parentElement.innerHTML='🔭'">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/eso.jpg' | relative_url }}" alt="ESO Garching" onerror="this.parentElement.innerHTML='🔭'">
       </div>
     </div>
     <div class="timeline-item timeline-major">
@@ -138,7 +141,7 @@ show_title: false
         <p class="timeline-description">Started PhD on semi-empirical models of X-ray AGN in galaxy clusters (BiD4BESt ITN).</p>
       </div>
       <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/noa.jpg' | relative_url }}" alt="NOA Athens" onerror="this.parentElement.innerHTML='🇬🇷'">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/noa.jpg' | relative_url }}" alt="NOA Athens" onerror="this.parentElement.innerHTML='🇬🇷'">
       </div>
     </div>
     <div class="timeline-item">
@@ -149,7 +152,7 @@ show_title: false
         <p class="timeline-description">CARMENES collaboration. Thesis on exoplanet detectability and occurrence rates.</p>
       </div>
       <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/granada.jpg' | relative_url }}" alt="Granada" onerror="this.parentElement.innerHTML='🌌'">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/granada.jpg' | relative_url }}" alt="Granada" onerror="this.parentElement.innerHTML='🌌'">
       </div>
     </div>
     <div class="timeline-item timeline-major">
@@ -160,7 +163,7 @@ show_title: false
         <p class="timeline-description">Thesis on astronomical bounds of Primordial Black Holes.</p>
       </div>
       <div class="timeline-image">
-        <img src="{{ '/assets/images/timeline/salamanca.jpg' | relative_url }}" alt="Salamanca" onerror="this.parentElement.innerHTML='⚛️'">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/salamanca.jpg' | relative_url }}" alt="Salamanca" onerror="this.parentElement.innerHTML='⚛️'">
       </div>
     </div>
   </div>

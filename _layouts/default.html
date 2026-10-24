@@ -15,26 +15,15 @@
   {% include footer.html %}
 
   <script>
-    // Dark mode toggle
+    // Dark mode toggle (the initial theme is set in head.html)
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
 
-    // Check for saved preference or system preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (savedTheme) {
-      html.setAttribute('data-theme', savedTheme);
-    } else if (systemPrefersDark) {
-      html.setAttribute('data-theme', 'dark');
-    }
-
     if (themeToggle) {
       themeToggle.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
+        try { localStorage.setItem('theme', newTheme); } catch (e) {}
       });
     }
 
@@ -42,12 +31,20 @@
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
 
+    function setNavOpen(open) {
+      navMenu.classList.toggle('is-open', open);
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
     if (navToggle && navMenu) {
       navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('is-open');
-        navToggle.setAttribute('aria-expanded',
-          navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-        );
+        setNavOpen(!navMenu.classList.contains('is-open'));
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('is-open')) {
+          setNavOpen(false);
+          navToggle.focus();
+        }
       });
     }
   </script>

@@ -192,11 +192,29 @@
     background-color: var(--color-bg);
     border-top: 1px solid var(--color-border);
     transform: translateX(100%);
-    transition: transform var(--transition-base);
+    visibility: hidden; // keep hidden links out of the keyboard tab order
+    transition: transform var(--transition-base), visibility 0s linear var(--transition-base);
     overflow-y: auto;
 
     &.is-open {
       transform: translateX(0);
+      visibility: visible;
+      transition: transform var(--transition-base), visibility 0s;
+    }
+  }
+
+  // Turn the hamburger into an "X" while the menu is open
+  .nav-toggle[aria-expanded="true"] .hamburger {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: rotate(-45deg);
     }
   }
 

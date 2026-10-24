@@ -39,7 +39,7 @@ permalink: /publications/
       <a href="https://doi.org/10.1093/mnras/stae1465" class="btn btn-sm btn-secondary" target="_blank" rel="noopener">
         DOI
       </a>
-      <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.tmp.1465M" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">ADS</a>
+      <a href="https://ui.adsabs.harvard.edu/abs/10.1093/mnras/stae1465/abstract" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">ADS</a>
     </div>
   </li>
 
@@ -90,19 +90,14 @@ permalink: /publications/
 <h2 class="section-title">Co-Authored Publications</h2>
 <ul class="publication-list">
 
-<li class="publication-item">
+  <li class="publication-item">
     <h3 class="publication-title">
-      <a href="" target="_blank" rel="noopener">
-        Data Representation Matters: Optimizing Machine Learning for X-ray Source Classification by Leveraging Spatio-Spectral Information
-      </a>
+      Data Representation Matters: Optimizing Machine Learning for X-ray Source Classification by Leveraging Spatio-Spectral Information
     </h3>
     <p class="publication-authors">
       Lieu M., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">(Submitted)</p>
-    <div class="publication-links">
-      <a href="" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">DOI</a>
-    </div>
+    <p class="publication-venue">Submitted</p>
   </li>
   <li class="publication-item">
     <h3 class="publication-title">
@@ -113,7 +108,7 @@ permalink: /publications/
     <p class="publication-authors">
       Fu H., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">Astronomy & Astrophysics, 704, A244, 2024</p>
+    <p class="publication-venue">Astronomy & Astrophysics, 704, A244, 2025</p>
     <div class="publication-links">
       <a href="https://doi.org/10.1051/0004-6361/202556480" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">DOI</a>
     </div>

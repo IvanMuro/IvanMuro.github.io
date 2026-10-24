@@ -1,9 +1,13 @@
 # Site Settings
 title: "Dr. Iván Muñoz Rodríguez"
 description: "Postdoctoral Researcher in X-ray Astrophysics at CEA Paris-Saclay"
-url: "https://yourusername.github.io" # Update with your GitHub username
+url: "https://ivanmuro.github.io"
 baseurl: "" # Leave empty for user site, or "/repo-name" for project site
-repository: "yourusername/yourusername.github.io" # Update with your repo
+repository: "IvanMuro/IvanMuro.github.io"
+
+# Social preview card style (used by jekyll-seo-tag)
+twitter:
+  card: summary
 
 # Author Information
 author:
@@ -49,6 +53,10 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/images/profile.jpg  # social preview image
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
@@ -65,6 +73,9 @@ exclude:
   - README.md
   - vendor
   - node_modules
+  - CLAUDE.md
+  - kk
+  - CV
 
 # Plugins (GitHub Pages compatible)
 plugins:

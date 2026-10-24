@@ -19,7 +19,8 @@
         {% for item in site.navigation %}
         <li class="nav-item">
           <a href="{{ item.url | relative_url }}"
-             class="nav-link {% if page.url == item.url %}is-active{% endif %}">
+             class="nav-link {% if page.url == item.url %}is-active{% endif %}"
+             {% if page.url == item.url %}aria-current="page"{% endif %}>
             {{ item.title }}
           </a>
         </li>
