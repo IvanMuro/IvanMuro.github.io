@@ -16,11 +16,12 @@ show_title: false
     </p>
     <p class="hero-links">
       <a class="button-primary" href="{{ '/assets/cv/cv_munoz_rodriguez.pdf' | relative_url }}">CV (PDF)</a>
-      <a href="{{ '/publications/' | relative_url }}">Publications</a>
       <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
       <a href="mailto:{{ site.author.email }}">Email</a>
     </p>
   </div>
+  <div class="hero-aside">
   <div class="hero-image-wrapper">
     <img
       src="{{ '/assets/images/profile.jpg' | relative_url }}"
@@ -31,9 +32,9 @@ show_title: false
       fetchpriority="high"
     >
   </div>
+  {% include daily-quote.html %}
+  </div>
 </section>
-
-{% include daily-quote.html %}
 
 <section class="section">
   <h2 class="section-title">What I do</h2>
@@ -44,7 +45,7 @@ show_title: false
     </div>
     <div class="focus-item">
       <dt>AI &amp; large datasets</dt>
-      <dd>Machine learning for X-ray source classification and Euclid catalogues, in Python (scikit-learn, JAX, TensorFlow) on HPC clusters.</dd>
+      <dd>Machine learning for X-ray source classification and Euclid catalogues, in Python (scikit-learn, JAX, TensorFlow) on HPC clusters. Co-author of a <a href="{{ '/publications/' | relative_url }}">paper accepted in A&amp;A</a> showing how data representation improves ML classification of X-ray sources.</dd>
     </div>
     <div class="focus-item">
       <dt>Simulations &amp; forward modelling</dt>
@@ -102,7 +103,7 @@ show_title: false
           <p class="entry-meta">CosmoStat, CEA Paris-Saclay</p>
           <p class="entry-body">Leading the FornaX cluster selection function and building its X-ray catalogues; co-lead of the FornaX AGN group. Euclid Consortium member since 2022.</p>
         </div>
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/cea.jpg' | relative_url }}" alt="CEA Paris-Saclay" width="168" height="112">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/cea.jpg' | relative_url }}" alt="" width="168" height="112">
       </div>
     </li>
     <li class="entry">
@@ -113,7 +114,7 @@ show_title: false
           <p class="entry-meta">National Observatory of Athens &amp; University of Southampton</p>
           <p class="entry-body">Thesis: “Semi-empirical models of X-ray AGN in galaxy clusters”.</p>
         </div>
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="PhD defence" width="168" height="112">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="" width="168" height="112">
       </div>
     </li>
     <li class="entry">
@@ -124,7 +125,7 @@ show_title: false
           <p class="entry-meta">European Southern Observatory, Garching</p>
           <p class="entry-body">Three-month visit studying the radial distribution of AGN in ~80 clusters.</p>
         </div>
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/eso.jpg' | relative_url }}" alt="ESO Garching" width="168" height="112">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/eso.jpg' | relative_url }}" alt="" width="168" height="112">
       </div>
     </li>
     <li class="entry">
@@ -135,7 +136,7 @@ show_title: false
           <p class="entry-meta">National Observatory of Athens &amp; University of Southampton</p>
           <p class="entry-body">Started PhD on semi-empirical models of X-ray AGN in galaxy clusters (BiD4BESt ITN).</p>
         </div>
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/noa.jpg' | relative_url }}" alt="National Observatory of Athens" width="168" height="112">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/noa.jpg' | relative_url }}" alt="" width="168" height="112">
       </div>
     </li>
     <li class="entry">
@@ -146,7 +147,7 @@ show_title: false
           <p class="entry-meta">University of Granada</p>
           <p class="entry-body">CARMENES collaboration. Thesis on exoplanet detectability and occurrence rates.</p>
         </div>
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/granada.jpg' | relative_url }}" alt="Granada" width="168" height="112">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/granada.jpg' | relative_url }}" alt="" width="168" height="112">
       </div>
     </li>
     <li class="entry">
@@ -157,7 +158,7 @@ show_title: false
           <p class="entry-meta">University of Salamanca</p>
           <p class="entry-body">Thesis on astronomical bounds of primordial black holes.</p>
         </div>
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/salamanca.jpg' | relative_url }}" alt="Salamanca" width="168" height="112">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/salamanca.jpg' | relative_url }}" alt="" width="168" height="112">
       </div>
     </li>
   </ul>

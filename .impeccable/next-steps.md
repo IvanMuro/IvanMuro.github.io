@@ -32,3 +32,7 @@ Iván chose: all five issues. Daily quote becomes a **margin note in the hero** 
 2. `/impeccable layout index.md`: quote into the hero as margin note; "What I do" 2x2 above 640px.
 3. `/impeccable harden index.md`: timeline alt text (describe the photo or alt=""), hide thumbnails ≤640px, footer links 44px + new-tab notes.
 4. `/impeccable polish index.md`.
+
+### Done (2026-11-18, evening)
+All four steps ran. Hero links: CV, GitHub, LinkedIn, Email (Publications stays in nav). AI card links the ML paper, now **accepted in A&A** (publications.md venue updated; add DOI/ADS when available). Quote is a margin note under the photo (≤900px: after the hero links). "What I do" is 2x2. Timeline photos alt="" and hidden ≤640px. Footer links 44px + new-tab notes.
+Open: Iván will upload a separate industry CV (where to link it is not decided). Detector flags Inter at 52% of text (overused-font): a typeface decision for Iván, not changed.

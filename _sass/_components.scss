@@ -181,7 +181,7 @@
 
   @media (max-width: 640px) {
     gap: var(--space-4);
-    img { width: 72px; height: 48px; margin-top: 0.2em; }
+    img { display: none; }         // too small to read at phone width
   }
 }
 
@@ -243,14 +243,10 @@
 
 .focus-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: var(--space-8);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--space-10);
   row-gap: var(--space-6);
   margin: 0;
-
-  @media (max-width: 960px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
@@ -413,21 +409,29 @@ address { font-style: normal; }
 
 // ----- Daily brief -----
 
+// A margin note pinned under the hero photo; on paper so it reads over the field
 .daily-quote {
   &[hidden] { display: none; }
+  position: relative;            // paint above the hero backdrop
   display: flex;
-  align-items: center;
-  gap: var(--space-4);
-  margin: var(--space-10) 0 0;
-  padding: var(--space-5) 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  align-items: flex-start;
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 360px;
+  margin: 0;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+
+  @media (max-width: 900px) { max-width: var(--measure); }
 }
 
 // The bulb drawing is a luminance mask, painted in the theme's secondary ink
 .quote-icon {
   flex-shrink: 0;
-  width: 52px;
+  width: 30px;
+  margin-top: 2px;
   aspect-ratio: 85 / 88;
   background: var(--color-text-secondary);
   -webkit-mask: url("../images/light_bulb_mask.png") center / contain no-repeat;
@@ -453,7 +457,7 @@ address { font-style: normal; }
   p {
     font-family: var(--font-handwritten);
     // The handwriting face runs small: size it above the body text
-    font-size: clamp(1.5rem, 1.1rem + 1vw, 1.875rem);
+    font-size: 1.375rem;
     line-height: 1.35;
     color: var(--color-text);
     margin: 0;
@@ -465,7 +469,7 @@ address { font-style: normal; }
     &.is-long {
       font-family: var(--font-serif);
       font-style: italic;
-      font-size: var(--text-xl);
+      font-size: var(--text-base);
       line-height: 1.5;
     }
   }

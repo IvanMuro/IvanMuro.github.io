@@ -187,7 +187,7 @@
   .footer-inner {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
     gap: var(--space-3);
     padding-top: var(--space-5);
@@ -203,9 +203,13 @@
 
 .footer-links {
   display: flex;
-  gap: var(--space-4);
+  flex-wrap: wrap;
+  column-gap: var(--space-4);
 
   a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;              // touch target; the type stays small
     color: var(--color-text-muted);
     text-decoration: none;
 
@@ -215,13 +219,16 @@
 
 // ----- Home -----
 
+// The hero is a size container so the backdrop can find the photo (cqw)
 .hero {
   position: relative;
+  container-type: inline-size;
   display: grid;
   grid-template-columns: minmax(0, var(--measure)) minmax(0, 1fr);
   gap: var(--space-12);
-  align-items: center;
-  margin-bottom: var(--space-8);
+  align-items: start;
+  padding-bottom: var(--space-10);
+  border-bottom: 1px solid var(--color-border);
 
   > :not(.hero-backdrop) { position: relative; }
 
@@ -239,6 +246,17 @@
   }
 }
 
+// Photo with the daily quote pinned under it as a margin note. Below 900px
+// the wrapper dissolves: the note follows the hero links instead.
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-5);
+
+  @media (max-width: 900px) { display: contents; }
+}
+
 // The photo sits on a mock X-ray observation (_includes/xray-field.svg)
 .hero-image-wrapper {
   position: relative;
@@ -254,17 +272,17 @@
 }
 
 // Mock X-ray observation filling the intro, from the header rule down to
-// the daily quote's rule (_includes/xray-field.svg). Pixels stay 10px; the
+// the hero's own rule (_includes/xray-field.svg). Pixels stay 10px; the
 // main cluster (180px from the image's right edge, 450px from its top) is
-// pinned behind the centre of the photo.
+// pinned behind the centre of the photo, which sits at the top of its
+// column, so its centre is one radius (--cx) below the hero's top.
 .hero-backdrop {
   --top: var(--space-12);                          // .site-main top padding
-  --bottom: var(--space-10);                       // hero and quote margins collapse to the larger
-  --cx: min(180px, (100% - var(--measure) - var(--space-12)) / 2);
-  --cy: calc(50% + (var(--top) - var(--bottom)) / 2);
+  --cx: min(180px, (100cqw - var(--measure) - var(--space-12)) / 2);
+  --cy: calc(var(--top) + var(--cx));
   position: absolute;
   top: calc(-1 * var(--top));
-  bottom: calc(-1 * var(--bottom));
+  bottom: 0;
   left: 0;
   right: 0;
   overflow: hidden;
@@ -276,7 +294,6 @@
 
   @media (max-width: 900px) {
     --cx: 90px;
-    --cy: calc(90px + var(--top));
     --fade-start: 180px;
     --fade-end: 360px;
     --regions-shift: 90px;   // the image extends 90px past the right edge here

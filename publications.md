@@ -80,7 +80,7 @@ permalink: /publications/
     <p class="publication-authors">
       Lieu M., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">Submitted</p>
+    <p class="publication-venue">Astronomy &amp; Astrophysics, accepted</p>
   </li>
   <li class="publication-item">
     <h3 class="publication-title">
