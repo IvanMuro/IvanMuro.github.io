@@ -7,16 +7,7 @@ permalink: /cv/
 
 <div class="page-content full-width">
 
-<p style="margin-bottom: var(--space-8);">
-  <a href="{{ '/assets/cv/cv_munoz_rodriguez.pdf' | relative_url }}" class="btn btn-primary" download>
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-      <polyline points="7 10 12 15 17 10"></polyline>
-      <line x1="12" y1="15" x2="12" y2="3"></line>
-    </svg>
-    Download PDF
-  </a>
-</p>
+<p><a href="{{ '/assets/cv/cv_munoz_rodriguez.pdf' | relative_url }}" download>Download CV (PDF)</a></p>
 
 <section class="section">
 <h2 class="section-title">Current Position</h2>
@@ -126,11 +117,11 @@ permalink: /cv/
 <section class="section">
 <h2 class="section-title">Collaborations</h2>
 <div class="cv-section">
-  <ul style="list-style: none; padding: 0;">
-    <li style="margin-bottom: var(--space-3);"><strong>FornaX</strong> (2025–present) – X-ray cluster and AGN catalogue builder, ESA-datalabs moderator, LOC 2025</li>
-    <li style="margin-bottom: var(--space-3);"><strong>The 300 Project</strong> (2025–present) – AGN incidence in clusters</li>
-    <li style="margin-bottom: var(--space-3);"><strong>Euclid Consortium</strong> (2022–present) – SWG Clusters of Galaxies & Galaxy Evolution</li>
-    <li style="margin-bottom: var(--space-3);"><strong>BiD4BESt</strong> (2020–2024) – Big Data for Black Hole Evolution Studies</li>
+  <ul class="plain-list">
+    <li><strong>FornaX</strong> (2025–present) – X-ray cluster and AGN catalogue builder, ESA-datalabs moderator, LOC 2025</li>
+    <li><strong>The 300 Project</strong> (2025–present) – AGN incidence in clusters</li>
+    <li><strong>Euclid Consortium</strong> (2022–present) – SWG Clusters of Galaxies & Galaxy Evolution</li>
+    <li><strong>BiD4BESt</strong> (2020–2024) – Big Data for Black Hole Evolution Studies</li>
     <li><strong>CARMENES</strong> (2019–2020) – Exoplanet detection via radial velocities</li>
   </ul>
 </div>
@@ -299,7 +290,7 @@ permalink: /cv/
 <section class="section">
 <h2 class="section-title">References</h2>
 <div class="cv-section">
-  <ul style="list-style: none; padding: 0;">
+  <ul class="plain-list">
     <li style="margin-bottom: var(--space-4);">
       <strong>Dr. Antonis Georgakakis</strong><br>
       Research Director, National Observatory of Athens. PI of TALES.<br>

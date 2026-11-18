@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbfaf7" id="theme-color">
 
 <!-- Set the theme before first paint to avoid a light-mode flash -->
 <script>
@@ -10,14 +11,15 @@
       theme = 'dark';
     }
     if (theme) document.documentElement.setAttribute('data-theme', theme);
+    // The browser bar follows the site theme (also updated by the toggle)
+    var meta = document.getElementById('theme-color');
+    if (meta && theme === 'dark') meta.setAttribute('content', '#141413');
   })();
 </script>
 
 <!-- Title, description, canonical URL, Open Graph and Twitter tags come from jekyll-seo-tag at the bottom -->
 <meta name="author" content="{{ site.author.name }}">
 <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
-<meta name="theme-color" content="#fefefe" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
 
 <!-- Academic/Scholarly Metadata -->
 <meta name="citation_author" content="{{ site.author.name }}">

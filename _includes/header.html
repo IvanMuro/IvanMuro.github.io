@@ -1,12 +1,13 @@
 <header class="site-header">
   <div class="container">
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="{{ '/' | relative_url }}" class="site-logo">
-        <span class="logo-text">IMR</span>
+      <a href="{{ '/' | relative_url }}" class="site-logo{% if page.layout == 'home' %} site-logo--home{% endif %}">
+        {{ site.author.name }}
       </a>
 
       <button
         id="nav-toggle"
+        type="button"
         class="nav-toggle"
         aria-expanded="false"
         aria-controls="nav-menu"
@@ -27,8 +28,8 @@
         {% endfor %}
         {% if site.features.dark_mode %}
         <li class="nav-item nav-item--theme">
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-            <svg class="icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false">
+            <svg class="icon icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -39,7 +40,7 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="icon icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>

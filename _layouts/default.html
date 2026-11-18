@@ -20,10 +20,19 @@
     const html = document.documentElement;
 
     if (themeToggle) {
+      // aria-pressed tells screen readers whether dark mode is on
+      const themeMeta = document.getElementById('theme-color');
+      const syncToggle = () => {
+        const dark = html.getAttribute('data-theme') === 'dark';
+        themeToggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        if (themeMeta) themeMeta.setAttribute('content', dark ? '#141413' : '#fbfaf7');
+      };
+      syncToggle();
       themeToggle.addEventListener('click', () => {
         const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         html.setAttribute('data-theme', newTheme);
         try { localStorage.setItem('theme', newTheme); } catch (e) {}
+        syncToggle();
       });
     }
 

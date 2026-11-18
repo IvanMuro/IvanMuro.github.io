@@ -1,9 +1,12 @@
-<div class="daily-quote" id="daily-quote" style="background-image: url('{{ '/assets/images/light_bulb.png' | relative_url }}');">
-  <span class="quote-label">Daily brief:</span>
-  <blockquote class="quote-text" id="quote-text">
-    <p></p>
-  </blockquote>
-</div>
+<aside class="daily-quote" id="daily-quote" aria-label="A thought for today" hidden>
+  <img class="quote-icon" src="{{ '/assets/images/light_bulb.png' | relative_url }}" alt="" width="44" height="44">
+  <div>
+    <span class="quote-label">A thought for today</span>
+    <blockquote class="quote-text" id="quote-text">
+      <p></p>
+    </blockquote>
+  </div>
+</aside>
 
 <script>
 (function() {
@@ -35,8 +38,12 @@
   // Display the quote
   const textEl = document.querySelector('#quote-text p');
 
-  if (textEl && quote) {
+  // The aside stays hidden without JavaScript or without a quote, so no empty quote marks show
+  if (textEl && quote && quote.text) {
     textEl.textContent = quote.text;
+    // Long quotes are hard to read in the handwritten face; set them in the serif instead
+    if (quote.text.length > 140) textEl.classList.add('is-long');
+    document.getElementById('daily-quote').hidden = false;
   }
 })();
 </script>

@@ -97,7 +97,7 @@ I am an astrophysicist with expertise in the growth of **supermassive black hole
 
 <section class="section">
 <h2 class="section-title">Scientific Outreach</h2>
-<p style="margin-bottom: var(--space-4);">I believe in making science accessible to everyone. My outreach activities include:</p>
+<p>I believe in making science accessible to everyone. My outreach activities include:</p>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
@@ -126,7 +126,7 @@ I am an astrophysicist with expertise in the growth of **supermassive black hole
 </div>
 </section>
 
-<div style="margin-top: var(--space-10);">
+<div class="section">
 <p><strong>Interested in collaborating?</strong> I'm always happy to discuss potential projects. <a href="{{ '/contact/' | relative_url }}">Get in touch</a> or check out my <a href="{{ '/publications/' | relative_url }}">publications</a>.</p>
 </div>
 
