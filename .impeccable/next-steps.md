@@ -36,3 +36,5 @@ Iván chose: all five issues. Daily quote becomes a **margin note in the hero** 
 ### Done (2026-11-18, evening)
 All four steps ran. Hero links: CV, GitHub, LinkedIn, Email (Publications stays in nav). AI card links the ML paper, now **accepted in A&A** (publications.md venue updated; add DOI/ADS when available). Quote is a margin note under the photo (≤900px: after the hero links). "What I do" is 2x2. Timeline photos alt="" and hidden ≤640px. Footer links 44px + new-tab notes.
 Open: Iván will upload a separate industry CV (where to link it is not decided). Detector flags Inter at 52% of text (overused-font): a typeface decision for Iván, not changed.
+- Phone version: below 640px the photo sits top right in its detection circle on a strip of the X-ray field (faded before the name). The hero is `isolation: isolate` with the backdrop at `z-index: -1`, because grid `order` changes paint order.
+- `404.html`: "No source detected here" with an empty detection region. `jekyll serve` shows WEBrick's own 404 for missing paths; GitHub Pages serves this page. Preview it at /404.html.
