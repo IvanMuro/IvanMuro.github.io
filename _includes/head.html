@@ -42,7 +42,8 @@
   "url": "{{ site.url }}",
   "sameAs": [
     "https://orcid.org/{{ site.author.orcid }}",
-    "https://github.com/{{ site.author.github }}"
+    "https://github.com/{{ site.author.github }}",
+    "{{ site.author.ads_library }}"
     {% if site.author.linkedin and site.author.linkedin != '' %},
     "{{ site.author.linkedin }}"
     {% endif %}

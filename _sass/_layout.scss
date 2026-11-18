@@ -219,113 +219,163 @@
 
 // ----- Home -----
 
-// The hero is a size container so the backdrop can find the photo (cqw)
-.hero {
-  position: relative;
-  isolation: isolate;            // the backdrop (z-index -1) stays inside the hero
-  container-type: inline-size;
-  display: grid;
-  grid-template-columns: minmax(0, var(--measure)) minmax(0, 1fr);
-  gap: var(--space-12);
-  align-items: start;
-  padding-bottom: var(--space-10);
-  border-bottom: 1px solid var(--color-border);
-
-  > :not(.hero-backdrop) { position: relative; }
-
-  @media (max-width: 900px) {
-    grid-template-columns: minmax(0, 1fr) 180px;
-    gap: var(--space-8);
-    align-items: start;
-  }
-
-  @media (max-width: 640px) {
-    grid-template-columns: 1fr;
-    gap: var(--space-5);
-
-    .hero-image-wrapper { order: -1; }
-  }
-}
-
-// Photo with the daily quote pinned under it as a margin note. Below 900px
-// the wrapper dissolves: the note follows the hero links instead.
-.hero-aside {
+// The home page is one screen on a mock X-ray observation that fills the
+// whole window. The shell clips the sky to the page; nothing scrolls sideways.
+.page-shell {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: var(--space-5);
-
-  @media (max-width: 900px) { display: contents; }
+  flex: 1 0 auto;
 }
 
-// The photo sits on a mock X-ray observation (_includes/xray-field.svg)
-.hero-image-wrapper {
+.page-shell--sky {
+  --content-max: calc(1360px + 2 * var(--space-6));
   position: relative;
+  isolation: isolate;            // the sky (z-index -1) paints above the page colour
+  overflow: hidden;
+  overflow: clip;                // clips without making a scroll container
+
+  .site-main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     // tall windows: the landing sits mid-screen
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-10);
+
+    @media (max-width: 640px) { padding-top: var(--space-8); }
+  }
+}
+
+// No logo on the home page (the name is right below), so the links centre
+.page-shell--sky {
+  .navbar {
+    justify-content: center;
+    // The bar sits on translucent paper, like the panels below
+    padding: var(--space-2) var(--space-5);
+    background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+    border-radius: 4px;
+
+    // Wider screens: the bar hugs its links, centred
+    @media (min-width: 641px) {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  .site-header { padding-top: var(--space-5); }
+
+  @media (max-width: 640px) {
+    .navbar { justify-content: flex-end; }
+    .nav-menu { align-items: center; }
+  }
+}
+
+// Photo and name top left, notebook card top right; the rest below
+.landing {
+  --photo: 240px;                  // photo frame; the face is the middle two thirds
+  --pull: calc(var(--photo) / 6);  // the face's edge lines up with the text
+  display: grid;
+  grid-template-columns: minmax(0, 30rem) minmax(0, 1fr) minmax(0, 1.15fr);
+  grid-template-areas:
+    "head  head  note"
+    "intro work  papers";
+  column-gap: var(--space-12);
+  row-gap: var(--space-8);
+  align-items: start;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "head  head"
+      "note  note"
+      "intro intro"
+      "work  papers";
+  }
+
+  @media (max-width: 760px) {
+    --photo: 150px;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "head" "note" "intro" "work" "papers";
+    row-gap: var(--space-8);
+  }
+
+  @media (max-width: 380px) { --photo: 120px; }   // the name still fits beside it
+}
+
+.landing-head { grid-area: head; align-self: center; }
+.landing-note {
+  grid-area: note;
+  align-self: center;
   justify-self: end;
   width: 100%;
-  max-width: 360px;
-  aspect-ratio: 1;
+  max-width: 38rem;              // a wide margin note, top right
 
-  // Phones: top right, as on desktop, with room for the detection circle
-  @media (max-width: 640px) {
-    justify-self: end;
-    max-width: 150px;
-  }
+  @media (max-width: 760px) { justify-self: stretch; }
+}
+.intro        { grid-area: intro; max-width: var(--measure); }
+
+// Text blocks sit on translucent paper, so the sky stays visible around
+// them but the sources behind the text drop back
+.intro,
+.landing-work,
+.landing-papers {
+  padding: var(--space-5) var(--space-6);
+  background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  border-radius: 4px;
+
+  @media (max-width: 640px) { padding: var(--space-4) var(--space-4); }
 }
 
-// Mock X-ray observation filling the intro, from the header rule down to
-// the hero's own rule (_includes/xray-field.svg). Pixels stay 10px; the
-// main cluster (180px from the image's right edge, 450px from its top) is
-// pinned behind the centre of the photo, which sits at the top of its
-// column, so its centre is one radius (--cx) below the hero's top.
-.hero-backdrop {
-  --top: var(--space-12);                          // .site-main top padding
-  --cx: min(180px, (100cqw - var(--measure) - var(--space-12)) / 2);
-  --cy: calc(var(--top) + var(--cx));
+.intro > :first-child { margin-top: 0; }
+.intro .hero-links { margin-bottom: calc(-1 * var(--space-2)); }
+.landing-work { grid-area: work; }
+.landing-papers { grid-area: papers; }
+
+// Photo beside the name and role
+.hero-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+
+  .hero-title { margin-bottom: var(--space-2); }
+  .hero-subtitle { margin-bottom: 0; }
+}
+
+.hero-image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: var(--photo);
+  aspect-ratio: 1;
+  margin-left: calc(-1 * var(--pull));
+  margin-right: calc(-1 * var(--pull) + var(--space-2));
+}
+
+// The sky (assets/images/xray-sky.svg, made by _scripts/make_sky.py, in 5px
+// pixels) is 2600x2000px with its main cluster at 720px, 260px. It hangs from the photo,
+// so the cluster's extended emission is always the halo around the face, and
+// it is painted in the accent through a mask so it follows the theme. Full
+// strength around the photo, fading toward the outskirts and out at the bottom.
+.sky {
   position: absolute;
-  z-index: -1;                   // always behind the photo, even when grid order moves it
-  top: calc(-1 * var(--top));
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  color: var(--color-accent);
+  z-index: -1;
+  left: calc(50% - 720px);
+  top: calc(50% - 260px);
+  width: 2600px;
+  height: 2000px;
+  background: var(--color-accent);
   pointer-events: none;
-  // Full strength around the photo, easing to a quiet third under the text
-  -webkit-mask-image: linear-gradient(to left, #000 0, #000 var(--fade-start, 360px), rgb(0 0 0 / 0.3) var(--fade-end, 640px));
-  mask-image: linear-gradient(to left, #000 0, #000 var(--fade-start, 360px), rgb(0 0 0 / 0.3) var(--fade-end, 640px));
-
-  @media (max-width: 900px) {
-    --cx: 90px;
-    --fade-start: 180px;
-    --fade-end: 360px;
-    --regions-shift: 90px;   // the image extends 90px past the right edge here
-  }
-
-  .hero-field {
-    position: absolute;
-    right: calc(var(--cx) - 180px);
-    top: calc(var(--cy) - 450px);
-    width: 1200px;
-    height: 900px;
-    max-width: none;
-  }
-
-  // Detection circles: only over the open field, gone before the text
-  .hero-regions {
-    -webkit-mask-image: linear-gradient(to left, #000 0, #000 calc(var(--fade-start, 360px) + var(--regions-shift, 0px) - 30px), transparent calc(var(--fade-start, 360px) + var(--regions-shift, 0px) + 30px));
-    mask-image: linear-gradient(to left, #000 0, #000 calc(var(--fade-start, 360px) + var(--regions-shift, 0px) - 30px), transparent calc(var(--fade-start, 360px) + var(--regions-shift, 0px) + 30px));
-  }
-
-  // Phones: a strip of sky behind the photo, faded out before the name
-  @media (max-width: 640px) {
-    --top: var(--space-8);
-    --cx: 75px;
-    -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 calc(var(--top) + 120px), transparent calc(var(--top) + 230px));
-    mask-image: linear-gradient(to bottom, #000 0, #000 calc(var(--top) + 120px), transparent calc(var(--top) + 230px));
-
-    .hero-regions { -webkit-mask-image: none; mask-image: none; }
-  }
+  -webkit-mask:
+    url("../images/xray-sky.svg") 0 0 / 2600px 2000px no-repeat,
+    radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgb(0 0 0 / 0.55) 650px, rgb(0 0 0 / 0.25) 1400px),
+    linear-gradient(to bottom, #000 1500px, transparent 2000px);
+  -webkit-mask-composite: source-in, source-in;
+  mask:
+    url("../images/xray-sky.svg") 0 0 / 2600px 2000px no-repeat,
+    radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgb(0 0 0 / 0.55) 650px, rgb(0 0 0 / 0.25) 1400px),
+    linear-gradient(to bottom, #000 1500px, transparent 2000px);
+  mask-composite: intersect;
 }
 
 // The main cluster's detection circle, hugging the photo at any size
@@ -338,22 +388,26 @@
   pointer-events: none;
 }
 
+// The name stays on one line; on phones it scales with the screen to fit
 .hero-title {
-  font-size: var(--text-4xl);
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  margin-bottom: var(--space-2);
+  white-space: nowrap;
 
-  @media (max-width: 640px) { font-size: var(--text-3xl); }
+  @media (max-width: 640px) { font-size: min(var(--text-2xl), 5.4vw); }
 }
 
+// The role lines match the name (serif, ink, semibold), a size down
 .hero-subtitle {
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
-  line-height: 1.5;
-  color: var(--color-text-secondary);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
   text-wrap: balance;
-  margin-bottom: var(--space-6);
+
+  @media (max-width: 640px) { font-size: var(--text-sm); }
 }
 
 .hero-role { display: block; }
@@ -368,6 +422,8 @@
   border-radius: 50%;
 }
 
+.intro-open { color: var(--color-text-secondary); }
+
 // One primary action; the other links stay text but keep 44px targets
 .hero-links {
   display: flex;
@@ -377,7 +433,7 @@
   row-gap: var(--space-2);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
-  margin: var(--space-6) 0 0;
+  margin: var(--space-5) 0 0;
 
   a {
     display: inline-flex;
@@ -400,8 +456,9 @@
     background: var(--color-accent-hover);
   }
 
+  // Ink ring, so focus stays distinct from the navy fill in both themes
   &:focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-text);
     outline-offset: 3px;
   }
 }

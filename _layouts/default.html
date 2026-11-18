@@ -6,6 +6,7 @@
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <div class="page-shell{% if page.layout == 'home' %} page-shell--sky{% endif %}">
   {% include header.html %}
 
   <main id="main-content" class="site-main">
@@ -13,6 +14,7 @@
   </main>
 
   {% include footer.html %}
+  </div>
 
   <script>
     // Dark mode toggle (the initial theme is set in head.html)

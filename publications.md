@@ -73,7 +73,7 @@ permalink: /publications/
 <h2 class="section-title">Co-authored</h2>
 <ul class="publication-list">
 
-  <li class="publication-item">
+  <li class="publication-item" id="data-representation-matters">
     <h3 class="publication-title">
       Data Representation Matters: Optimizing Machine Learning for X-ray Source Classification by Leveraging Spatio-Spectral Information
     </h3>
