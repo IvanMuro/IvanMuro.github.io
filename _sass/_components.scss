@@ -50,7 +50,17 @@
   }
 }
 
-// Section labels carry the pixel motif on every page
+// The detection circle around a source mark, as SVG so the hairline stays
+// crisp at any size (section labels and bullets)
+:root {
+  --ring: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Ccircle cx='13' cy='13' r='12.4' fill='none' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E");
+}
+
+// Section labels carry a source in its detection circle, like the bullets:
+// each section its own shape, cycling through the six. Smaller than a
+// bullet (3px sky pixels in a 22px circle), as the label is small caps.
+.section { @include varied-marks; }
+
 .section-title {
   display: flex;
   align-items: center;
@@ -59,11 +69,15 @@
   &::before {
     content: '';
     flex-shrink: 0;
-    width: 12px;
-    height: 12px;
-    background: var(--color-accent);   // the pixel mark keeps the accent
-    -webkit-mask: var(--pixel-source) center / contain no-repeat;
-    mask: var(--pixel-source) center / contain no-repeat;
+    width: 22px;
+    height: 22px;
+    background: var(--color-accent);   // the mark keeps the accent
+    -webkit-mask:
+      var(--mark, var(--pixel-source)) center / 21px 21px no-repeat,
+      var(--ring) center / 22px 22px no-repeat;
+    mask:
+      var(--mark, var(--pixel-source)) center / 21px 21px no-repeat,
+      var(--ring) center / 22px 22px no-repeat;
   }
 }
 
@@ -219,6 +233,41 @@
   margin: var(--space-1) 0 0;
 }
 
+// ----- Bullets on inner pages -----
+
+// Plain lists use the home page's sources, each item its own shape: 7 sky
+// pixels at 3px in a 26px detection circle, sized to sit beside a line of
+// text. One pseudo-element draws both (a second, absolutely placed one at
+// the end of the item would stop justified text treating its last line as last).
+.page-content ul:not([class]),
+.page-content ul.cv-item-description {
+  list-style: none;
+  padding-left: 0;
+
+  > li {
+    @include varied-marks;
+    position: relative;
+    padding-left: 2.25rem;
+    margin-bottom: var(--space-2);   // room between the circles
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(0.85em - 13px);  // centred on the first line of text
+      left: 0;
+      width: 26px;
+      height: 26px;
+      background: var(--color-accent);
+      -webkit-mask:
+        var(--mark, var(--pixel-source)) center / 21px 21px no-repeat,
+        var(--ring) center / 26px 26px no-repeat;
+      mask:
+        var(--mark, var(--pixel-source)) center / 21px 21px no-repeat,
+        var(--ring) center / 26px 26px no-repeat;
+    }
+  }
+}
+
 // ----- Skills (CV) -----
 
 .skills-grid {
@@ -236,7 +285,8 @@
   list-style: none;
   padding: 0;
   color: var(--color-text-secondary);
-  li { margin: 0; }
+  li { margin: 0; text-align: left; }   // short items in narrow columns: justifying opens gaps
+  li + li { margin-top: var(--space-1); }   // items that wrap stay distinct
 }
 
 // ----- Home: sources as bullets -----
@@ -256,6 +306,7 @@
 // Each item is a detected source: a pixel point source in its detection
 // circle, at the same 5px resolution as the sky behind it
 .source-item {
+  @include varied-marks;
   display: grid;
   grid-template-columns: 48px minmax(0, 1fr);
   column-gap: var(--space-3);
@@ -288,55 +339,40 @@
   }
 }
 
-.source-detail {
-  summary {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    min-height: 48px;
-    font-size: var(--text-lg);
-    font-weight: 600;
-    line-height: 1.3;
-    cursor: pointer;
-    list-style: none;
+// Work items: a linked title level with the source, one line under it.
+// Two columns only when the evidence spans the frame (761-1199px); beside
+// the lead column one column keeps each line long enough to read.
+.work-list {
+  display: grid;
+  column-gap: var(--space-6);
+  row-gap: var(--space-3);
 
-    &::-webkit-details-marker { display: none; }
+  .source-item + .source-item { margin-top: 0; }
 
-    // A drawn plus that becomes a minus when open
-    &::after {
-      content: '';
-      flex-shrink: 0;
-      width: 11px;
-      height: 11px;
-      margin-left: auto;
-      color: var(--color-accent);
-      background:
-        linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat,
-        linear-gradient(currentColor, currentColor) center / 1.5px 100% no-repeat;
-      transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    &:hover { color: var(--color-accent); }
-  }
-
-  &[open] summary::after {
-    background: linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat;
-    transform: rotate(180deg);
-  }
-
-  p {
-    margin: 0;
-    color: var(--color-text-secondary);
-    text-align: left;
+  @media (min-width: 761px) and (max-width: 1199px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.source-more {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  font-family: var(--font-sans);
+.work-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 12px 0 0;              // first line sits level with the source, as papers do
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover { color: var(--color-accent); text-decoration: underline; text-decoration-color: currentColor; }
+  }
+}
+
+.work-text {
   font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin: var(--space-1) 0 0;
 }
 
 // Papers: title, finding, one line of authors, venue and ADS
@@ -447,7 +483,6 @@
   }
 }
 
-// Home: two papers side by side on wide screens
 // ----- Contact -----
 
 .contact-list {
@@ -482,35 +517,22 @@ address { font-style: normal; }
 
 // ----- Daily brief -----
 
-// A margin note pinned top right, on the same translucent paper panel as
-// the text blocks, with a panel title like theirs
+// A small note at the end of the intro: the quote, then where it comes from. Short quotes in the handwriting, long ones in
+// the serif.
 .daily-quote {
   &[hidden] { display: none; }
-  position: relative;            // paint above the sky
-  display: block;
-  width: 100%;
   margin: 0;
-  padding: var(--space-5) var(--space-6);
-  background: color-mix(in srgb, var(--color-bg) 86%, transparent);
-  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
-  border-radius: 4px;
-
-  @media (max-width: 640px) { padding: var(--space-4); }
 }
 
-// Same as the panel titles (.landing-title)
 .quote-label {
   display: block;
-  font-family: var(--font-serif);
-  font-size: var(--text-xl);
-  font-weight: 600;
-  line-height: 1.25;
-  color: var(--color-text);
-  margin-bottom: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
 }
 
 .quote-text {
-  max-width: 54rem;
   border: none;
   padding: 0;
   margin: 0;
@@ -519,8 +541,8 @@ address { font-style: normal; }
 
   p {
     font-family: var(--font-handwritten);
-    // The handwriting face runs small: size it above the body text
-    font-size: 1.375rem;
+    // The handwriting face runs small: size it a step above the body
+    font-size: var(--text-xl);
     line-height: 1.35;
     color: var(--color-text);
     margin: 0;
@@ -532,8 +554,9 @@ address { font-style: normal; }
     &.is-long {
       font-family: var(--font-serif);
       font-style: italic;
-      font-size: var(--text-base);
+      font-size: var(--text-sm);
       line-height: 1.5;
+      color: var(--color-text-secondary);
     }
   }
 }

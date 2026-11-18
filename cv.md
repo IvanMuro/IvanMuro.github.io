@@ -14,13 +14,17 @@ permalink: /cv/
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
-      <span class="cv-item-title">Postdoctoral Researcher</span>
+      <span class="cv-item-title">Postdoctoral Researcher at CosmoStat</span>
       <span class="cv-item-date">January 2025 – Present</span>
     </div>
-    <p class="cv-item-subtitle">CEA Paris-Saclay, Astrophysics Department (DAp)</p>
-    <p class="cv-item-description">
-      Designing and maintaining data analysis pipelines for large X-ray observational datasets. Building X-ray cluster and AGN catalogues for the FornaX Euclid deep field.
-    </p>
+    <p class="cv-item-subtitle">CEA Paris-Saclay, Astrophysics Department (DAp), France</p>
+    <ul class="cv-item-description">
+      <li><em>Euclid</em>–<em>XMM-Newton</em> heritage project: physics characterisation of galaxy clusters, cluster cosmology and advanced X-ray data analysis.</li>
+      <li>Leading a study of how AGN contaminate X-ray cluster detection (first-author paper in prep.).</li>
+      <li>Leading the FornaX cluster selection function: modelling how gas properties, AGN and experimental set-up determine which clusters the survey detects, needed for unbiased cosmological and astrophysical studies (first-author paper in prep.).</li>
+      <li>Leading a study of how environment triggers AGN: incidence of AGN and mergers in FornaX clusters with redshifts and <em>Euclid</em> morphologies (first-author paper; awaiting observations, starting in 2027).</li>
+      <li>Upgrade of the source-detection pipeline for AGN and clusters in new <em>XMM</em> observations and simulations.</li>
+    </ul>
   </div>
 </div>
 </section>
@@ -65,51 +69,35 @@ permalink: /cv/
 </section>
 
 <section class="section">
+<h2 class="section-title">Schools & Courses</h2>
+<div class="cv-section">
+  <ul>
+    <li><strong>2026</strong> – Astrostat Academy: machine learning and AI</li>
+    <li><strong>2022</strong> – School on Galaxy Evolution</li>
+    <li><strong>2021</strong> – School on Numerical Galaxy Formation</li>
+  </ul>
+</div>
+</section>
+
+<section class="section">
 <h2 class="section-title">Awards & Funding</h2>
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
       <span class="cv-item-title">ESO-Garching Visitor Programme</span>
-      <span class="cv-item-date">2024</span>
+      <span class="cv-item-date">2024 (3-month funded visit)</span>
     </div>
-    <p class="cv-item-subtitle">European Southern Observatory, Garching</p>
-    <p class="cv-item-description">Awarded 3-month funding to study the radial distribution of ~80 clusters at intermediate redshift z ~ 0.2-0.8 and design a follow-up program to characterise AGN membership.</p>
+    <p class="cv-item-subtitle">European Southern Observatory, Garching, Germany</p>
+    <p class="cv-item-description">Studied the radial distribution of AGN in ~80 clusters at intermediate redshift (z ~ 0.2–0.8) and designed a follow-up programme to characterise AGN cluster membership.</p>
   </div>
 
   <div class="cv-item">
     <div class="cv-item-header">
-      <span class="cv-item-title">Marie Curie PhD Research Fellow</span>
+      <span class="cv-item-title">PhD Marie Curie Research Fellow</span>
       <span class="cv-item-date">2020 – 2024</span>
     </div>
-    <p class="cv-item-subtitle">H2020 Marie Skłodowska-Curie ITN "BiD4BESt"</p>
-    <p class="cv-item-description">Early Stage Researcher of the Innovative Training Network "Big Data analytics for Black hole Evolution Studies" (grant agreement No 860744).</p>
-  </div>
-</div>
-</section>
-
-<section class="section">
-<h2 class="section-title">Industry Experience</h2>
-<div class="cv-section">
-  <div class="cv-item">
-    <div class="cv-item-header">
-      <span class="cv-item-title">Data Scientist (Internship)</span>
-      <span class="cv-item-date">May – July 2022</span>
-    </div>
-    <p class="cv-item-subtitle">OmegaLambdaTec (OLT), Garching, Munich</p>
-    <p class="cv-item-description">
-      Translated raw satellite imagery into structured datasets suitable for downstream modelling and analysis.
-    </p>
-  </div>
-
-  <div class="cv-item">
-    <div class="cv-item-header">
-      <span class="cv-item-title">Data Scientist (Internship)</span>
-      <span class="cv-item-date">January – March 2021</span>
-    </div>
-    <p class="cv-item-subtitle">Prewarp (Remote)</p>
-    <p class="cv-item-description">
-      Contributed to demand forecasting and price optimisation models using regression techniques on real sales data.
-    </p>
+    <p class="cv-item-subtitle">H2020 Marie Skłodowska-Curie ITN</p>
+    <p class="cv-item-description">"Big Data analytics for Black hole Evolution Studies" (BiD4BESt, grant agreement No 860744, PI Francesco Shankar).</p>
   </div>
 </div>
 </section>
@@ -117,11 +105,61 @@ permalink: /cv/
 <section class="section">
 <h2 class="section-title">Collaborations</h2>
 <div class="cv-section">
-  <ul class="plain-list">
-    <li><strong>FornaX</strong> (2025–present) – X-ray cluster and AGN catalogue builder, ESA-datalabs moderator, LOC 2025</li>
-    <li><strong>Euclid Consortium</strong> (2022–present) – SWG Clusters of Galaxies & Galaxy Evolution</li>
-    <li><strong>BiD4BESt</strong> (2020–2024) – Big Data for Black Hole Evolution Studies</li>
-    <li><strong>CARMENES</strong> (2019–2020) – Exoplanet detection via radial velocities</li>
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">FornaX: Euclid–XMM Heritage Deep Field</span>
+      <span class="cv-item-date">Since 2025</span>
+    </div>
+    <ul class="cv-item-description">
+      <li>Builder status for the X-ray catalogues.</li>
+      <li>Co-lead of the AGN group.</li>
+      <li>Coordinator and maintainer of the collaboration's ESA Datalabs science platform.</li>
+      <li>Moderator of the collaboration's Slack channels.</li>
+    </ul>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">Euclid Consortium</span>
+      <span class="cv-item-date">Since 2022</span>
+    </div>
+    <p class="cv-item-description">Active member of the Clusters of Galaxies and Galaxy Evolution Science Working Groups.</p>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">Magneticum</span>
+      <span class="cv-item-date">2022</span>
+    </div>
+    <p class="cv-item-description">3-month internship exploring the incidence of AGN in galaxy clusters in the Magneticum cosmological hydrodynamic simulations.</p>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">BiD4BESt H2020 Marie Skłodowska-Curie Innovative Training Network</span>
+      <span class="cv-item-date">2020 – 2024</span>
+    </div>
+    <p class="cv-item-description">Early Stage Researcher of "Big Data analytics for Black hole Evolution Studies" (BiD4BESt, grant agreement No 860744). Leading analysis of the impact of environment on AGN triggering.</p>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">CARMENES</span>
+      <span class="cv-item-date">2019 – 2020</span>
+    </div>
+    <p class="cv-item-description">Exoplanet survey of M-dwarf stars in the habitable zone using optical and near-infrared radial velocities. For my MSc thesis I studied the occurrence of exoplanets in CARMENCITA, the CARMENES sample of M dwarfs.</p>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Event Organisation</h2>
+<div class="cv-section">
+  <ul>
+    <li><strong>2027</strong> – LOC, FornaX Annual Meeting 2027 (upcoming)</li>
+    <li><strong>2027</strong> – LOC, DAp SciAI Days (upcoming)</li>
+    <li><strong>2026</strong> – LOC, FornaX Annual Meeting 2026</li>
+    <li><strong>2025</strong> – LOC, FornaX Annual Meeting 2025</li>
   </ul>
 </div>
 </section>
@@ -130,41 +168,31 @@ permalink: /cv/
 <h2 class="section-title">Technical Skills</h2>
 <div class="skills-grid">
   <div class="skill-category">
+    <h4 class="skill-category-title">Science & Data</h4>
+    <ul class="skill-list">
+      <li>Simulation analysis: N-body, hydrodynamical</li>
+      <li>X-ray data analysis (<em>XMM-Newton</em>, <em>Chandra</em>)</li>
+      <li>Forward modelling</li>
+      <li>Source detection pipelines</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
     <h4 class="skill-category-title">Programming & Tools</h4>
     <ul class="skill-list">
-      <li>Python (Pandas, NumPy, SciPy, Matplotlib, Astropy)</li>
+      <li>Python: NumPy, SciPy, Pandas, Astropy, Matplotlib</li>
+      <li>Fortran 77 and 90</li>
       <li>Git, Bash, LaTeX</li>
-      <li>Google Earth Engine (basic)</li>
-      <li>Linux, Windows, macOS</li>
+      <li>HPC clusters (SLURM)</li>
+      <li>Linux, macOS, Windows</li>
     </ul>
   </div>
 
   <div class="skill-category">
-    <h4 class="skill-category-title">Data & Analysis</h4>
+    <h4 class="skill-category-title">Artificial Intelligence</h4>
     <ul class="skill-list">
-      <li>Large-scale data wrangling</li>
-      <li>Statistical analysis</li>
-      <li>Simulation-based modelling</li>
-      <li>Regression & uncertainty analysis</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h4 class="skill-category-title">Developed Software</h4>
-    <ul class="skill-list">
-      <li>Simulation-based pipelines for SMBH populations</li>
-      <li>3D-to-2D projection tools for cosmological simulations</li>
-      <li>Satellite image preprocessing (Sentinel-2)</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h4 class="skill-category-title">Soft Skills</h4>
-    <ul class="skill-list">
-      <li>Analytical thinking</li>
-      <li>Problem ownership</li>
-      <li>Clear communication</li>
-      <li>International collaboration</li>
+      <li>scikit-learn, JAX, Flax, TensorFlow</li>
+      <li>Agentic AI</li>
     </ul>
   </div>
 
@@ -172,7 +200,7 @@ permalink: /cv/
     <h4 class="skill-category-title">Languages</h4>
     <ul class="skill-list">
       <li>Spanish (native)</li>
-      <li>English (B2)</li>
+      <li>English (C1)</li>
     </ul>
   </div>
 </div>
@@ -183,105 +211,96 @@ permalink: /cv/
 <div class="cv-section">
   <div class="cv-item">
     <div class="cv-item-header">
-      <span class="cv-item-title">Sylvain Heutier (MSc student)</span>
+      <span class="cv-item-title">Pablo Frutos Rull (MSc student)</span>
+      <span class="cv-item-date">2026</span>
     </div>
-    <p class="cv-item-subtitle">Principal supervisors: Marguerite Pierre & François Lanusse</p>
+    <p class="cv-item-subtitle">Co-supervised with Marguerite Pierre & François Lanusse</p>
     <p class="cv-item-description">
-      Scientific and technical assistance. Now a PhD student at the IAP.
+      Project: Mapping baryon properties into dark matter haloes. Now a PhD student at LIRA, Observatoire de Paris.
+    </p>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-item-header">
+      <span class="cv-item-title">Sylvain Heutier (MSc student)</span>
+      <span class="cv-item-date">2025</span>
+    </div>
+    <p class="cv-item-subtitle">Co-supervised with Marguerite Pierre & François Lanusse</p>
+    <p class="cv-item-description">
+      Project: Transformer architecture for cluster classification. Now a PhD student at the IAP.
     </p>
   </div>
 
   <div class="cv-item">
     <div class="cv-item-header">
       <span class="cv-item-title">Marios Kouzis (undergraduate)</span>
+      <span class="cv-item-date">2023</span>
     </div>
-    <p class="cv-item-subtitle">Principal supervisor: Antonis Georgakakis</p>
+    <p class="cv-item-subtitle">Co-supervised with Antonis Georgakakis</p>
     <p class="cv-item-description">
-      Co-supervision during 3-month research visit at the National Observatory of Athens. Currently ESR student of TALES EU Doctoral Training Network.
+      Project: Incidence of AGN in Abell clusters (3-month research programme, National Observatory of Athens). Now an ESR in the TALES EU Doctoral Network.
     </p>
   </div>
 
   <div class="cv-item">
     <div class="cv-item-header">
-      <span class="cv-item-title">Antonis Fokas (bachelor thesis)</span>
+      <span class="cv-item-title">Antonis Fokas (BSc thesis)</span>
+      <span class="cv-item-date">2023</span>
     </div>
-    <p class="cv-item-subtitle">Principal supervisor: Antonis Georgakakis</p>
+    <p class="cv-item-subtitle">Co-supervised with Antonis Georgakakis</p>
     <p class="cv-item-description">
-      Co-supervision of bachelor thesis at the National Observatory of Athens.
+      Project: Incidence of AGN in clusters at intermediate redshifts.
     </p>
   </div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Seminars & Conferences</h2>
+<div class="cv-section">
+  <h4>Invited Seminars</h4>
+  <ul>
+    <li><strong>2026/06</strong> – IAASARS hybrid seminar, National Observatory of Athens, Greece</li>
+    <li><strong>2025/05</strong> – Postdoc seminar, CEA Paris-Saclay, France</li>
+    <li><strong>2024/10</strong> – UAM seminar, Universidad Autónoma de Madrid, Spain</li>
+    <li><strong>2024/03</strong> – ESO Cheese & Wine, ESO, Garching, Germany</li>
+    <li><strong>2023/05</strong> – Joy of Hydrosims, USM/LMU, Munich, Germany</li>
+    <li><strong>2023/02</strong> – IAC AGN talks, IAC, Tenerife, Spain</li>
+    <li><strong>2023/02</strong> – Theoretical Physics and Astronomy group, UGR, Granada, Spain</li>
+    <li><strong>2022/11</strong> – FAME, INAF, Bologna, Italy</li>
+    <li><strong>2022/07</strong> – AGN Coffee, ESO, Garching, Germany</li>
+    <li><strong>2022/06</strong> – ESO Lunch Talk, ESO, Garching, Germany</li>
+    <li><strong>2022/05</strong> – Monday Seminar, University of Southampton, UK</li>
+    <li><strong>2022/05</strong> – Kaffeerunde, MPE, Garching, Germany</li>
+  </ul>
+
+  <h4 style="margin-top: var(--space-6);">Conference Talks & Posters</h4>
+  <ul>
+    <li><strong>2026/06</strong> – Nafplio, Greece: three contributed talks, "Forthcoming multi-parameter cluster/AGN selection functions", "Impact of AGN in cluster detection" and "Source detection & cluster selection"</li>
+    <li><strong>2025/11</strong> – Euclid France Annual Meeting, Strasbourg, France: "Clustbusters: Chasing clusters in the FornaX Euclid-XMM Heritage Deep Field" (contributed talk)</li>
+    <li><strong>2025/07</strong> – Madonna di Campiglio, Italy: three contributed talks, "AGN contamination on cluster detection", "Brief introduction to ASTROMATCH" and "Pipeline and source list of the central FornaX square degree"</li>
+    <li><strong>2024/02</strong> – BiD4BESt Final Conference, Southampton, UK (contributed talk)</li>
+    <li><strong>2023/09</strong> – "A journey through galactic environments", Porto Ercole, Italy (poster)</li>
+    <li><strong>2023/06</strong> – CAVITY 3rd Annual Meeting, Granada, Spain (contributed talk)</li>
+    <li><strong>2023/01</strong> – VI Meeting of AGN Research in Spain in the Era of the New Observatories, Granada, Spain (contributed talk)</li>
+    <li><strong>2022/09</strong> – "What Drives the Growth of Black Holes", Reykjavík, Iceland (poster and spotlight talk)</li>
+    <li><strong>2022/09</strong> – XV Reunión Científica de la Sociedad Española de Astronomía, Tenerife, Spain (poster)</li>
+    <li><strong>2022/07</strong> – 44th COSPAR Scientific Assembly, Athens, Greece, Symposium E1.7 "Properties and Evolution of Active Galactic Nuclei in Galaxy Clusters" (contributed talk)</li>
+    <li><strong>2022/06</strong> – European Astronomical Society Annual Meeting, Valencia, Spain, Session S5e "Towards the next generation of X-ray surveys with Athena" (contributed talk)</li>
+  </ul>
 </div>
 </section>
 
 <section class="section">
 <h2 class="section-title">Outreach</h2>
 <div class="cv-section">
-  <div class="cv-item">
-    <div class="cv-item-header">
-      <span class="cv-item-title">Pilgrims of the Kosmos</span>
-      <span class="cv-item-date">2022</span>
-    </div>
-    <p class="cv-item-subtitle">Podcast</p>
-    <p class="cv-item-description">
-      Co-hosted a podcast talking with scientists at different career stages about their research journeys.
-    </p>
-  </div>
-
-  <div class="cv-item">
-    <div class="cv-item-header">
-      <span class="cv-item-title">Centro Astronómico de Tiedra</span>
-      <span class="cv-item-date">Summers 2019, 2021, 2022</span>
-    </div>
-    <p class="cv-item-subtitle">Support Astronomer</p>
-    <p class="cv-item-description">
-      Delivered live scientific presentations to large, non-technical audiences. Operated observation and planetarium equipment during public events.
-    </p>
-  </div>
-
-  <div class="cv-item">
-    <div class="cv-item-header">
-      <span class="cv-item-title">Publications</span>
-    </div>
-    <div class="cv-item-description">
-      <ul>
-        <li>September 2022: Article in "Astronomía" magazine on AGN (Spanish)</li>
-        <li>July 2022: HIPPARCHOS (Hellenic Astronomical Society), Vol. 3, Issue 5, pp. 17-21</li>
-        <li>December 2020: Outreach talk on exoplanet detection via radial velocities</li>
-      </ul>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="section">
-<h2 class="section-title">Selected Presentations</h2>
-<div class="cv-section">
-  <h4>Invited Talks</h4>
   <ul>
-    <li><strong>2025/05</strong> – Postdoc seminar, CEA Paris-Saclay</li>
-    <li><strong>2024/10</strong> – UAM seminar, Universidad Autónoma de Madrid</li>
-    <li><strong>2024/03</strong> – ESO cheese & wine, ESO Garching</li>
-    <li><strong>2023/05</strong> – Joy of Hydrosims, USM/LMU Munich</li>
-    <li><strong>2023/02</strong> – IAC AGN talks, IAC Tenerife</li>
-    <li><strong>2023/02</strong> – Theoretical physics and astronomy group, UGR Granada</li>
-    <li><strong>2022/11</strong> – FAME, INAF Bologna</li>
-    <li><strong>2022/07</strong> – AGN coffee, ESO Garching</li>
-    <li><strong>2022/06</strong> – ESO lunch talk, ESO Garching</li>
-    <li><strong>2022/05</strong> – Southampton Monday Seminar, University of Southampton</li>
-    <li><strong>2022/05</strong> – Kaffeerunde, MPE Garching</li>
-  </ul>
-
-  <h4 style="margin-top: var(--space-6);">Contributed Talks</h4>
-  <ul>
-    <li><strong>2025/07</strong> – "Clustbusters: Chasing clusters in the FornaX Euclid-XMM Heritage Deep Field", Euclid France Annual meeting, Strasbourg</li>
-    <li><strong>2025/07</strong> – "AGN contamination on cluster detection", Madonna di Campiglio</li>
-    <li><strong>2025/07</strong> – "Brief introduction to ASTROMATCH", Madonna di Campiglio</li>
-    <li><strong>2025/07</strong> – "Pipeline and source list of the central FornaX square degree", Madonna di Campiglio</li>
-    <li><strong>2024/02</strong> – Final conference BiD4BESt, Southampton</li>
-    <li><strong>2023/06</strong> – CAVITY 3rd annual meeting, Granada</li>
-    <li><strong>2023/01</strong> – VI Meeting of AGN Research in Spain, Granada</li>
-    <li><strong>2022/07</strong> – 44th COSPAR Scientific Assembly, Athens (Symposium E1.7)</li>
-    <li><strong>2022/06</strong> – EAS 2022, Valencia (Session S5e: X-ray surveys with Athena)</li>
+    <li><strong>2026</strong> – Total solar eclipse event at Centro Astronómico de Tiedra</li>
+    <li><strong>2022</strong> – Podcast "Pilgrims of the Kosmos": conversations with scientists at different career stages</li>
+    <li><strong>2022/09</strong> – Article on AGN in <em>Astronomía</em> (Spanish)</li>
+    <li><strong>2022/07</strong> – Hellenic Astronomical Society, <em>Hipparchos</em>, Vol. 3, Issue 5, pp. 17–21: article on AGN (co-author)</li>
+    <li><strong>2020/12</strong> – Outreach talk on exoplanets, "Radial velocities" (Spanish)</li>
+    <li><strong>2019, 2021, 2022</strong> – Summer support astronomer at Centro Astronómico de Tiedra (amateur astronomy)</li>
   </ul>
 </div>
 </section>
@@ -307,7 +326,7 @@ permalink: /cv/
 </section>
 
 <p style="margin-top: var(--space-8); color: var(--color-text-muted); font-size: var(--text-sm);">
-  Last updated: October 2026
+  Last updated: November 2026
 </p>
 
 </div>

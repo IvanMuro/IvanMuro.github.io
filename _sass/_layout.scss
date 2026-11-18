@@ -271,49 +271,61 @@
   }
 }
 
-// Photo and name top left, notebook card top right; the rest below
+// Who and how to reach me on the left; the evidence (work, papers) on the
+// right, closing on the notebook note. One column below 1200px.
 .landing {
   --photo: 240px;                  // photo frame; the face is the middle two thirds
   --pull: calc(var(--photo) / 6);  // the face's edge lines up with the text
   display: grid;
-  grid-template-columns: minmax(0, 30rem) minmax(0, 1fr) minmax(0, 1.15fr);
-  grid-template-areas:
-    "head  head  note"
-    "intro work  papers";
-  column-gap: var(--space-12);
+  grid-template-columns: minmax(0, 1fr);
   row-gap: var(--space-8);
   align-items: start;
 
-  @media (max-width: 1199px) {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-areas:
-      "head  head"
-      "note  note"
-      "intro intro"
-      "work  papers";
+  @media (min-width: 1200px) {
+    grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
+    column-gap: var(--space-12);
   }
 
-  @media (max-width: 760px) {
-    --photo: 150px;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "head" "note" "intro" "work" "papers";
-    row-gap: var(--space-8);
-  }
-
+  @media (max-width: 760px) { --photo: 150px; }
   @media (max-width: 380px) { --photo: 120px; }   // the name still fits beside it
 }
 
-.landing-head { grid-area: head; align-self: center; }
-.landing-note {
-  grid-area: note;
-  align-self: center;
-  justify-self: end;
-  width: 100%;
-  max-width: 38rem;              // a wide margin note, top right
-
-  @media (max-width: 760px) { justify-self: stretch; }
+.landing-lead,
+.landing-evidence {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  min-width: 0;
 }
-.intro        { grid-area: intro; max-width: var(--measure); }
+
+.landing-evidence { gap: var(--space-6); }
+
+// Below 1200px the lead keeps reading width; the evidence uses the frame
+@media (max-width: 1199px) {
+  .landing-lead { max-width: var(--measure); }
+}
+
+// Short laptop screens (1366x768, 1440x900): tighten so the name, the
+// opening and the CV button land in the first view
+@media (min-width: 1200px) and (max-height: 960px) {
+  .landing { --photo: 200px; row-gap: var(--space-6); }
+  .landing-lead { gap: var(--space-6); }
+  .page-shell--sky .site-header { padding-top: var(--space-3); }
+  .page-shell--sky .site-main {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+  }
+}
+
+// The notebook: a small note closing the intro, after the contact links,
+// set off by a hairline
+.landing-note {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+
+  &:has(.daily-quote[hidden]) { display: none; }   // no quote, no empty rule
+}
 
 // Text blocks sit on translucent paper, so the sky stays visible around
 // them but the sources behind the text drop back
@@ -330,8 +342,25 @@
 
 .intro > :first-child { margin-top: 0; }
 .intro .hero-links { margin-bottom: calc(-1 * var(--space-2)); }
-.landing-work { grid-area: work; }
-.landing-papers { grid-area: papers; }
+
+// The name, laid straight on the sky, gets a soft paper scrim, so the cluster's
+// emission drops back behind the letters without a hard panel edge
+.hero-text {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: calc(-1 * var(--space-3)) calc(-1 * var(--space-4)) calc(-1 * var(--space-3)) var(--space-4);
+    background: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    border-radius: 12px;
+    filter: blur(12px);
+    pointer-events: none;
+  }
+}
+
 
 // Photo beside the name and role
 .hero-head {
@@ -376,6 +405,13 @@
     radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgb(0 0 0 / 0.55) 650px, rgb(0 0 0 / 0.25) 1400px),
     linear-gradient(to bottom, #000 1500px, transparent 2000px);
   mask-composite: intersect;
+
+  // Phones: a smaller sky, so the halo frames the photo instead of filling
+  // the screen behind the name
+  @media (max-width: 760px) {
+    transform: scale(0.6);
+    transform-origin: 720px 260px;
+  }
 }
 
 // The main cluster's detection circle, hugging the photo at any size
@@ -422,7 +458,10 @@
   border-radius: 50%;
 }
 
-.intro-open { color: var(--color-text-secondary); }
+.intro-open {
+  color: var(--color-text-secondary);
+  text-align: left;              // one short line: justifying it only opens gaps
+}
 
 // One primary action; the other links stay text but keep 44px targets
 .hero-links {

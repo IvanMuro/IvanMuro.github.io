@@ -7,6 +7,9 @@ permalink: /publications/
 
 <div class="page-content full-width">
 
+{% if site.data.ads_metrics %}
+<p class="paper-stats">{{ site.data.ads_metrics.refereed }} refereed papers ({{ site.data.ads_metrics.first_author }} first-author) · {{ site.data.ads_metrics.citations }} citations · h-index {{ site.data.ads_metrics.h_index }} <span class="paper-stats-source">(NASA ADS, {{ site.data.ads_metrics.as_of }})</span></p>
+{% endif %}
 <p>Full list on <a href="{{ site.author.ads_library }}" target="_blank" rel="noopener">NASA ADS</a>. ORCID: <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener">{{ site.author.orcid }}</a></p>
 
 <section class="section">
@@ -21,7 +24,7 @@ permalink: /publications/
     <p class="publication-authors">
       <span class="author-highlight">Muñoz Rodríguez, I.</span>, et al.
     </p>
-    <p class="publication-venue">Monthly Notices of the Royal Astronomical Society, 2024</p>
+    <p class="publication-venue">Monthly Notices of the Royal Astronomical Society, 532, 336, 2024</p>
     <div class="publication-links">
       <a href="https://doi.org/10.1093/mnras/stae1465" target="_blank" rel="noopener">DOI</a>
       <a href="https://ui.adsabs.harvard.edu/abs/10.1093/mnras/stae1465/abstract" target="_blank" rel="noopener">ADS</a>
@@ -60,7 +63,7 @@ permalink: /publications/
 
   <li class="publication-item">
     <h3 class="publication-title">
-      The cluster selection criteria in FornaX
+      How cluster physics shapes the FornaX selection function
     </h3>
     <p class="publication-authors">
       <span class="author-highlight">Muñoz Rodríguez, I.</span>, et al. (in prep)
@@ -72,6 +75,16 @@ permalink: /publications/
 <section class="section">
 <h2 class="section-title">Co-authored</h2>
 <ul class="publication-list">
+
+  <li class="publication-item">
+    <h3 class="publication-title">
+      The XMM-Euclid FornaX Deep-Survey I. Scientific motivations, XMM observing plan and simulation programme
+    </h3>
+    <p class="publication-authors">
+      Pierre M., <span class="author-highlight">Muñoz Rodríguez, I.</span>, et al.
+    </p>
+    <p class="publication-venue">Submitted</p>
+  </li>
 
   <li class="publication-item" id="data-representation-matters">
     <h3 class="publication-title">
@@ -106,7 +119,7 @@ permalink: /publications/
     <p class="publication-authors">
       López I. E., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">Astronomy & Astrophysics, 692, 2024</p>
+    <p class="publication-venue">Astronomy & Astrophysics, 692, A209, 2024</p>
     <div class="publication-links">
       <a href="https://doi.org/10.1051/0004-6361/202450510" target="_blank" rel="noopener">DOI</a>
     </div>
@@ -121,7 +134,7 @@ permalink: /publications/
     <p class="publication-authors">
       Fu H., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">Monthly Notices of the Royal Astronomical Society, 2024</p>
+    <p class="publication-venue">Monthly Notices of the Royal Astronomical Society, 532, 177, 2024</p>
     <div class="publication-links">
       <a href="https://doi.org/10.1093/mnras/stae1492" target="_blank" rel="noopener">DOI</a>
     </div>
@@ -136,24 +149,9 @@ permalink: /publications/
     <p class="publication-authors">
       Musiimenta B., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">Astronomy & Astrophysics, 687, 2024</p>
+    <p class="publication-venue">Astronomy & Astrophysics, 687, A111, 2024</p>
     <div class="publication-links">
       <a href="https://doi.org/10.1051/0004-6361/202449283" target="_blank" rel="noopener">DOI</a>
-    </div>
-  </li>
-
-  <li class="publication-item">
-    <h3 class="publication-title">
-      <a href="https://doi.org/10.1051/0004-6361/202140968" target="_blank" rel="noopener">
-        The CARMENES search for exoplanets around M dwarfs. Planet occurrence rates from a subsample of 71 stars
-      </a>
-    </h3>
-    <p class="publication-authors">
-      Sabotta, S., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
-    </p>
-    <p class="publication-venue">Astronomy & Astrophysics, 653, 2021</p>
-    <div class="publication-links">
-      <a href="https://doi.org/10.1051/0004-6361/202140968" target="_blank" rel="noopener">DOI</a>
     </div>
   </li>
 
@@ -166,9 +164,24 @@ permalink: /publications/
     <p class="publication-authors">
       Amado, P. J., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
     </p>
-    <p class="publication-venue">Astronomy & Astrophysics, 650, 2021</p>
+    <p class="publication-venue">Astronomy & Astrophysics, 650, A188, 2021</p>
     <div class="publication-links">
       <a href="https://doi.org/10.1051/0004-6361/202140633" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </li>
+
+  <li class="publication-item">
+    <h3 class="publication-title">
+      <a href="https://doi.org/10.1051/0004-6361/202140968" target="_blank" rel="noopener">
+        The CARMENES search for exoplanets around M dwarfs. Planet occurrence rates from a subsample of 71 stars
+      </a>
+    </h3>
+    <p class="publication-authors">
+      Sabotta, S., et al. (incl. <span class="author-highlight">Muñoz Rodríguez, I.</span>)
+    </p>
+    <p class="publication-venue">Astronomy & Astrophysics, 653, A114, 2021</p>
+    <div class="publication-links">
+      <a href="https://doi.org/10.1051/0004-6361/202140968" target="_blank" rel="noopener">DOI</a>
     </div>
   </li>
 </ul>
