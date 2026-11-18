@@ -1,10 +1,9 @@
-<div class="daily-quote" id="daily-quote" style="background-image: url('{{ '/assets/images/light_bulb.png' | relative_url }}');">
-  <span class="quote-label">Daily brief:</span>
+<figure class="daily-quote" id="daily-quote" hidden>
   <blockquote class="quote-text" id="quote-text">
     <p></p>
   </blockquote>
-</div>
-
+  <figcaption class="quote-label">From my notebook</figcaption>
+</figure>
 <script>
 (function() {
   // Quote data from Jekyll (embedded at build time)
@@ -35,8 +34,12 @@
   // Display the quote
   const textEl = document.querySelector('#quote-text p');
 
-  if (textEl && quote) {
+  // The aside stays hidden without JavaScript or without a quote, so no empty quote marks show
+  if (textEl && quote && quote.text) {
     textEl.textContent = quote.text;
+    // Long quotes are hard to read in the handwritten face; set them in the serif instead
+    if (quote.text.length > 140) textEl.classList.add('is-long');
+    document.getElementById('daily-quote').hidden = false;
   }
 })();
 </script>

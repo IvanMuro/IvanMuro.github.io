@@ -31,12 +31,7 @@ permalink: /blog/
 
 {% else %}
 
-<div style="padding: var(--space-8); background-color: var(--color-bg-alt); border-radius: var(--radius-lg); text-align: center;">
-  <h3 style="margin-top: 0;">Coming Soon</h3>
-  <p style="color: var(--color-text-secondary); margin-bottom: 0;">
-    The blog section is currently being set up. Occasional posts about research, astrophysics, and reflections on the scientific journey will appear here.
-  </p>
-</div>
+<p>Occasional posts about research, astrophysics, and the scientific journey will appear here.</p>
 
 {% endif %}
 

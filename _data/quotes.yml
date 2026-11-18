@@ -6,6 +6,7 @@
 #   - text: "The quote text"
 #     author: "Author Name"
 #     source: "Optional source (book, speech, etc.)"
+#     original: "Optional original-language text (kept for reference, not shown)"
 
 #- text: "The cosmos is within us. We are made of star-stuff."
 #  author: "Carl Sagan"
@@ -105,35 +106,41 @@
 #  author: "Albert Einstein"
 
 
-- text: "No todo el éxito se debe al trabajo duro, ni toda la pobreza a la pereza."
+- text: "Not all success comes from hard work, and not all poverty from laziness."
+  original: "No todo el éxito se debe al trabajo duro, ni toda la pobreza a la pereza."
   author: null
   source: null
 
-- text: "No hay motivo alguno para arriesgar lo que tienes y necesitas, por algo que no tienes y no necesitas."
+- text: "There is no reason to risk what you have and need for something you don't have and don't need."
+  original: "No hay motivo alguno para arriesgar lo que tienes y necesitas, por algo que no tienes y no necesitas."
   author: null
   source: null
 
-- text: "No tengo costes irrecuperables."
+- text: "I have no sunk costs."
+  original: "No tengo costes irrecuperables."
   author: null
   source: null
 
-- text: "No todos los precios vienen en una etiqueta."
+- text: "Not every price comes on a tag."
+  original: "No todos los precios vienen en una etiqueta."
   author: null
   source: null
 
-- text: "Acostúmbrate a que un montón de cosas salgan mal; equivocándote la mitad de las veces puedes ganar -> Una pequeña cantidad de cosas son responsables del resultado"
+- text: "Get used to lots of things going wrong; you can be wrong half the time and still win. A small number of things decide the outcome."
+  original: "Acostúmbrate a que un montón de cosas salgan mal; equivocándote la mitad de las veces puedes ganar -> Una pequeña cantidad de cosas son responsables del resultado"
   author: null
   source: null
 
-- text: "People are not driven by past causes, but move towards goals that they themself set."
+- text: "People are not driven by past causes, but move towards goals they set for themselves."
   author: null
   source: null
 
-- text: "Tú no eliges lo que te apetece."
+- text: "You don't choose what you feel like."
+  original: "Tú no eliges lo que te apetece."
   author: null
   source: null
 
-- text: "Which is the goal behind the behaviour?"
+- text: "What is the goal behind the behaviour?"
   author: null
   source: null
 
@@ -145,7 +152,8 @@
   author: null
   source: null
 
-- text: "Ser razonable, no racional."
+- text: "Be reasonable, not rational."
+  original: "Ser razonable, no racional."
   author: null
   source: null
 
@@ -161,47 +169,58 @@
   author: null
   source: null
 
-- text: "No hay trucos ni atajos."
+- text: "There are no tricks and no shortcuts."
+  original: "No hay trucos ni atajos."
   author: null
   source: null
 
-- text: "\"No\" con decisión, \"sí\" con cautela. Una promesa hecha es un vínculo ineludible."
+- text: "Say \"no\" firmly and \"yes\" carefully. A promise made is a bond you cannot escape."
+  original: "\"No\" con decisión, \"sí\" con cautela. Una promesa hecha es un vínculo ineludible."
   author: null
   source: null
 
-- text: "La ciencia avanza con cada funeral."
+- text: "Science advances one funeral at a time."
+  original: "La ciencia avanza con cada funeral."
   author: null
   source: null
 
-- text: "Vive en guardia de tus propias tonterías."
+- text: "Stay on guard against your own nonsense."
+  original: "Vive en guardia de tus propias tonterías."
   author: null
   source: null
 
-- text: "Espejos disfrazados de ventanas."
+- text: "Mirrors disguised as windows."
+  original: "Espejos disfrazados de ventanas."
   author: null
   source: null
 
-- text: "La historia que te cuentas es la historia en que te conviertes."
+- text: "The story you tell yourself is the story you become."
+  original: "La historia que te cuentas es la historia en que te conviertes."
   author: null
   source: null
 
-- text: "No tropieces con algo que está detrás de ti."
+- text: "Don't trip over something that is behind you."
+  original: "No tropieces con algo que está detrás de ti."
   author: null
   source: null
 
-- text: "Evita los viajes a Abilene."
+- text: "Avoid trips to Abilene."
+  original: "Evita los viajes a Abilene."
   author: null
   source: null
 
-- text: "No todo problema necesita una respuesta."
+- text: "Not every problem needs an answer."
+  original: "No todo problema necesita una respuesta."
   author: null
   source: null
 
-- text: "La atención que le prestas a cualquier cosa debe ser proporcional a su valor."
+- text: "The attention you give anything should be proportional to its value."
+  original: "La atención que le prestas a cualquier cosa debe ser proporcional a su valor."
   author: null
   source: null
 
-- text: "La única felicidad que encontrarás en lo alto de la montaña es la que tú traigas."
+- text: "The only happiness you will find at the top of the mountain is the happiness you bring with you."
+  original: "La única felicidad que encontrarás en lo alto de la montaña es la que tú traigas."
   author: null
   source: null
 
@@ -209,31 +228,38 @@
   author: null
   source: null
 
-- text: "Cuando la métrica es el objetivo deja de ser una buena métrica."
+- text: "When a measure becomes a target, it stops being a good measure."
+  original: "Cuando la métrica es el objetivo deja de ser una buena métrica."
   author: null
   source: null
 
-- text: "Es mejor una respuesta aproximadamente correcta que una exactamente equivocada."
+- text: "Better an approximately right answer than an exactly wrong one."
+  original: "Es mejor una respuesta aproximadamente correcta que una exactamente equivocada."
   author: null
   source: null
 
-- text: "Tonterías que no son tonterías."
+- text: "Nonsense that isn't nonsense."
+  original: "Tonterías que no son tonterías."
   author: null
   source: null
 
-- text: "Tú no mejoras nada, tu cuerpo se adapta."
+- text: "You don't improve anything; your body adapts."
+  original: "Tú no mejoras nada, tu cuerpo se adapta."
   author: null
   source: null
 
-- text: "Cuando muramos no solo perderemos nuestro cuerpo sino también a aquellos que persisten en nuestra memoria."
+- text: "When we die we lose not only our body but also the people who live on in our memory."
+  original: "Cuando muramos no solo perderemos nuestro cuerpo sino también a aquellos que persisten en nuestra memoria."
   author: null
   source: null
 
-- text: "Las metáforas y las historias tienen muchísima más fuerza que las ideas. [...] . Las ideas van y vienen, las historias permanecen."
+- text: "Metaphors and stories are far more powerful than ideas. [...] Ideas come and go; stories stay."
+  original: "Las metáforas y las historias tienen muchísima más fuerza que las ideas. [...] . Las ideas van y vienen, las historias permanecen."
   author: null
   source: null
 
-- text: "Dinámica de la incertidumbre."
+- text: "The dynamics of uncertainty."
+  original: "Dinámica de la incertidumbre."
   author: null
   source: null
 
@@ -241,35 +267,43 @@
   author: null
   source: null
 
-- text: "La falta de ideas se compensa con exceso de ideología."
+- text: "A lack of ideas is made up for with an excess of ideology."
+  original: "La falta de ideas se compensa con exceso de ideología."
   author: null
   source: null
 
-- text: "Lo que me entristece no es que me hayas mentido, sino que ya nunca podré confiar en ti."
+- text: "What saddens me is not that you lied to me, but that I can never trust you again."
+  original: "Lo que me entristece no es que me hayas mentido, sino que ya nunca podré confiar en ti."
   author: null
   source: null
 
-- text: "Debes encontrar una verdad que sea cierta para ti, una idea por la cual puedas vivir y morir."
+- text: "You must find a truth that is true for you, an idea you can live and die for."
+  original: "Debes encontrar una verdad que sea cierta para ti, una idea por la cual puedas vivir y morir."
   author: null
   source: null
 
-- text: "Si apartate, no tapes el sol."
+- text: "Step aside; you're blocking my sun."
+  original: "Si apartate, no tapes el sol."
   author: null
   source: null
 
-- text: "La felicidad se encuentra en la libertad de la autosuficiencia."
+- text: "Happiness is found in the freedom of self-sufficiency."
+  original: "La felicidad se encuentra en la libertad de la autosuficiencia."
   author: null
   source: null
 
-- text: "Se trata de llegar a ser lo que uno verdaderamente es."
+- text: "It is about becoming who you truly are."
+  original: "Se trata de llegar a ser lo que uno verdaderamente es."
   author: null
   source: null
 
-- text: "Donde va tu atención va tu energía."
+- text: "Where your attention goes, your energy goes."
+  original: "Donde va tu atención va tu energía."
   author: null
   source: null
 
-- text: "Se tu propio espectador, busca tu propio aplauso."
+- text: "Be your own audience; seek your own applause."
+  original: "Se tu propio espectador, busca tu propio aplauso."
   author: null
   source: null
 
@@ -277,7 +311,8 @@
   author: null
   source: null
 
-- text: "No es el mundo el que va despacio, es que tú vas con prisas."
+- text: "The world isn't slow; you're in a hurry."
+  original: "No es el mundo el que va despacio, es que tú vas con prisas."
   author: null
   source: null
 
@@ -289,7 +324,8 @@
   author: null
   source: null
 
-- text: "Ver una oportunidad donde otros ven un límite."
+- text: "See an opportunity where others see a limit."
+  original: "Ver una oportunidad donde otros ven un límite."
   author: null
   source: null
 
@@ -297,23 +333,27 @@
   author: null
   source: null
 
-- text: "El talento se construye en la calma, el carácter en la tempestad"
+- text: "Talent is built in calm, character in the storm."
+  original: "El talento se construye en la calma, el carácter en la tempestad"
   author: null
   source: null
 
-- text: "Si no eres capaz de derrotar a tu rival, al menos no le ayudes a que te derrote."
+- text: "If you can't beat your rival, at least don't help them beat you."
+  original: "Si no eres capaz de derrotar a tu rival, al menos no le ayudes a que te derrote."
   author: null
   source: null
 
-- text: "Alimentar a la bestia."
+- text: "Feed the beast."
+  original: "Alimentar a la bestia."
   author: null
   source: null
 
-- text: "Porque para vivir tu vida nadie te espera, está allí afuera."
+- text: "Because nobody is waiting for you to live your life; it's out there."
+  original: "Porque para vivir tu vida nadie te espera, está allí afuera."
   author: null
   source: null
 
-- text: "Rest at the end not in the middle."
+- text: "Rest at the end, not in the middle."
   author: null
   source: null
 
@@ -321,11 +361,13 @@
   author: null
   source: null
 
-- text: "Cuidar el cuerpo para cuidar la mente."
+- text: "Care for the body to care for the mind."
+  original: "Cuidar el cuerpo para cuidar la mente."
   author: null
   source: null
 
-- text: "No todo lo que sobrevive lo hace por un motivo, pero todo lo que desaparece lo hace por una razón."
+- text: "Not everything that survives does so for a reason, but everything that disappears has a cause."
+  original: "No todo lo que sobrevive lo hace por un motivo, pero todo lo que desaparece lo hace por una razón."
   author: null
   source: null
 
@@ -333,15 +375,18 @@
   author: null
   source: null
 
-- text: "Lo que creemos determina lo que hacemos."
+- text: "What we believe determines what we do."
+  original: "Lo que creemos determina lo que hacemos."
   author: null
   source: null
 
-- text: "No todo lo que cuenta se puede contar y no todo lo que se puede contar cuenta."
+- text: "Not everything that counts can be counted, and not everything that can be counted counts."
+  original: "No todo lo que cuenta se puede contar y no todo lo que se puede contar cuenta."
   author: null
   source: null
 
-- text: "No se pueden recorrer todos los caminos a la vez."
+- text: "You can't walk every path at once."
+  original: "No se pueden recorrer todos los caminos a la vez."
   author: null
   source: null
 
@@ -353,31 +398,38 @@
   author: null
   source: null
 
-- text: "Inspirar, respirar y no desistir."
+- text: "Breathe in, breathe out, and don't give up."
+  original: "Inspirar, respirar y no desistir."
   author: null
   source: null
 
-- text: "¿Durante cuánto tiempo harías ________ si pudieras?"
+- text: "How long would you do ________ if you could?"
+  original: "¿Durante cuánto tiempo harías ________ si pudieras?"
   author: null
   source: null
 
-- text: "Olvídate de esas montañas, es en el hogar donde hay que vivir como un viajero."
+- text: "Forget those mountains; it is at home that you must live like a traveller."
+  original: "Olvídate de esas montañas, es en el hogar donde hay que vivir como un viajero."
   author: null
   source: null
 
-- text: "Es justamente la posibilidad de realizar un sueño lo que hace que la vida sea interesante."
+- text: "It is precisely the possibility of making a dream come true that makes life interesting."
+  original: "Es justamente la posibilidad de realizar un sueño lo que hace que la vida sea interesante."
   author: null
   source: null
 
-- text: "La magia es una mentira bien contada."
+- text: "Magic is a well-told lie."
+  original: "La magia es una mentira bien contada."
   author: null
   source: null
 
-- text: "¿Cuánto vales y cuánto cuestas?"
+- text: "What are you worth, and what do you cost?"
+  original: "¿Cuánto vales y cuánto cuestas?"
   author: null
   source: null
 
-- text: "Los planes son enredaderas, tienden a torcerse."
+- text: "Plans are climbing vines; they tend to twist."
+  original: "Los planes son enredaderas, tienden a torcerse."
   author: null
   source: null
 
@@ -385,11 +437,13 @@
   author: null
   source: null
 
-- text: "Más no es mejor, mejor es mejor."
+- text: "More isn't better; better is better."
+  original: "Más no es mejor, mejor es mejor."
   author: null
   source: null
 
-- text: "Lo que resistes persiste, lo que aceptas te transforma."
+- text: "What you resist persists; what you accept transforms you."
+  original: "Lo que resistes persiste, lo que aceptas te transforma."
   author: null
   source: null
 
@@ -397,11 +451,13 @@
   author: null
   source: null
 
-- text: "¿Por qué pienso lo que pienso?"
+- text: "Why do I think what I think?"
+  original: "¿Por qué pienso lo que pienso?"
   author: null
   source: null
 
-- text: "Hospitalario con mis sueños."
+- text: "Hospitable to my dreams."
+  original: "Hospitalario con mis sueños."
   author: null
   source: null
 
@@ -409,7 +465,8 @@
   author: null
   source: null
 
-- text: "Darse cuenta al final de que no era destino el asunto, es que eso que buscábamos es lo mismo que perdimos, pero que lo hemos encontrado en otro lugar, porque es otro tiempo, porque uno es otro y porque no hay otra posibilidad de encontrar lo que hemos perdido."
+- text: "To realise in the end that the destination was never the point: what we were looking for is what we lost, found again somewhere else, because it is another time, because we are someone else, and because there is no other way to find what we have lost."
+  original: "Darse cuenta al final de que no era destino el asunto, es que eso que buscábamos es lo mismo que perdimos, pero que lo hemos encontrado en otro lugar, porque es otro tiempo, porque uno es otro y porque no hay otra posibilidad de encontrar lo que hemos perdido."
   author: null
   source: null
 
@@ -417,7 +474,8 @@
   author: null
   source: null
 
-- text: "Quietud, lentitud, plenitud."
+- text: "Stillness, slowness, fullness."
+  original: "Quietud, lentitud, plenitud."
   author: null
   source: null
 
@@ -425,19 +483,21 @@
   author: null
   source: null
 
-- text: "How can you know where are you going if you have never been there? You can't, so pay attention to how you have been directed."
+- text: "How can you know where you are going if you have never been there? You can't, so pay attention to how you have been directed."
   author: null
   source: null
 
-- text: "I know what is this. It is myself talking to myself about myself."
+- text: "I know what this is. It is myself talking to myself about myself."
   author: null
   source: null
 
-- text: "El que vive sin luchar, sin querer progresar, está mirando al suelo dentro de una catedral. Yo era así pero vi en mí lo esencial [...] 1 pasión; 2 llenar la despensa; 3 trabajar sin esperar recompensas; 4 por solucionar situaciones tensas."
+- text: "Whoever lives without fighting, without wanting to move forward, is staring at the floor inside a cathedral. I was like that, but I saw what was essential in me [...] 1 passion; 2 fill the pantry; 3 work without expecting rewards; 4 resolve tense situations."
+  original: "El que vive sin luchar, sin querer progresar, está mirando al suelo dentro de una catedral. Yo era así pero vi en mí lo esencial [...] 1 pasión; 2 llenar la despensa; 3 trabajar sin esperar recompensas; 4 por solucionar situaciones tensas."
   author: null
   source: null
 
-- text: "Disciplina silenciosa."
+- text: "Quiet discipline."
+  original: "Disciplina silenciosa."
   author: null
   source: null
 
@@ -445,7 +505,7 @@
   author: null
   source: null
 
-- text: "Let them make the connections instead of convince them."
+- text: "Let them make the connections instead of convincing them."
   author: null
   source: null
 
@@ -453,23 +513,27 @@
   author: null
   source: null
 
-- text: "Rationality is not about knowing facts, it is about recognise which facts are relevant."
+- text: "Rationality is not about knowing facts, it is about recognising which facts are relevant."
   author: null
   source: null
 
-- text: "Esclavos del tiempo libre."
+- text: "Slaves to free time."
+  original: "Esclavos del tiempo libre."
   author: null
   source: null
 
-- text: "Pero no solamente eso. Nunca es solamente eso."
+- text: "But not only that. It's never only that."
+  original: "Pero no solamente eso. Nunca es solamente eso."
   author: null
   source: null
 
-- text: "Tú decides si te caes en una tumba o en un bache."
+- text: "You decide whether you fall into a grave or a pothole."
+  original: "Tú decides si te caes en una tumba o en un bache."
   author: null
   source: null
 
-- text: "Una caricia al alma."
+- text: "A caress for the soul."
+  original: "Una caricia al alma."
   author: null
   source: null
 
@@ -481,15 +545,17 @@
   author: null
   source: null
 
-- text: "To beat out the living daylight out of someone."
+- text: "To beat the living daylights out of someone."
   author: null
   source: null
 
-- text: "No es solo cuestión de ser sincero, también es el cuándo y el cómo."
+- text: "It's not only about being honest; it's also about when and how."
+  original: "No es solo cuestión de ser sincero, también es el cuándo y el cómo."
   author: null
   source: null
 
-- text: "Pues no salgo a buscar mis pasos y acabo perdiendo el camino."
+- text: "I don't go out looking for my own steps, and I end up losing the way."
+  original: "Pues no salgo a buscar mis pasos y acabo perdiendo el camino."
   author: null
   source: null
 
@@ -497,35 +563,43 @@
   author: null
   source: null
 
-- text: "Si que Dios tiene planes para mí, ojalá con los míos puedan coincidir."
+- text: "If God has plans for me, I hope they line up with mine."
+  original: "Si que Dios tiene planes para mí, ojalá con los míos puedan coincidir."
   author: null
   source: null
 
-- text: "La realidad es una ficción con presupuesto limitado."
+- text: "Reality is fiction on a limited budget."
+  original: "La realidad es una ficción con presupuesto limitado."
   author: null
   source: null
 
-- text: "Cómo se formula una pregunta influye el tipo de respuesta."
+- text: "How a question is asked shapes the answer you get."
+  original: "Cómo se formula una pregunta influye el tipo de respuesta."
   author: null
   source: null
 
-- text: "Preocuparse es una forma egoísta del miedo."
+- text: "Worrying is a selfish form of fear."
+  original: "Preocuparse es una forma egoísta del miedo."
   author: null
   source: null
 
-- text: "A ti te importa lo que a otros importa."
+- text: "You care about what others care about."
+  original: "A ti te importa lo que a otros importa."
   author: null
   source: null
 
-- text: "Las cosas que no tenemos no nos ayudan a resolver el reto."
+- text: "The things we don't have don't help us meet the challenge."
+  original: "Las cosas que no tenemos no nos ayudan a resolver el reto."
   author: null
   source: null
 
-- text: "Si no tienes ningún tipo de expectativas puede que no alcances tu nivel máximo."
+- text: "If you have no expectations at all, you may never reach your full potential."
+  original: "Si no tienes ningún tipo de expectativas puede que no alcances tu nivel máximo."
   author: null
   source: null
 
-- text: "Una cosa es sentirte capaz de hacer algo. Otra totalmente diferente es asumir que tus habilidades te garantizan un determinado resultado."
+- text: "It is one thing to feel capable of doing something. It is quite another to assume your skills guarantee a particular result."
+  original: "Una cosa es sentirte capaz de hacer algo. Otra totalmente diferente es asumir que tus habilidades te garantizan un determinado resultado."
   author: null
   source: null
 
@@ -533,7 +607,8 @@
   author: null
   source: null
 
-- text: "No se hace nada de la nada."
+- text: "Nothing is made from nothing."
+  original: "No se hace nada de la nada."
   author: null
   source: null
 

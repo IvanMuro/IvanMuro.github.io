@@ -1,12 +1,16 @@
 <header class="site-header">
   <div class="container">
     <nav class="navbar" role="navigation" aria-label="Main navigation">
+      {% unless page.layout == 'home' %}{% comment %} The home page shows the name and photo just below {% endcomment %}
       <a href="{{ '/' | relative_url }}" class="site-logo">
-        <span class="logo-text">IMR</span>
+        <svg class="site-mark" width="20" height="20" viewBox="0 0 5 5" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path opacity=".18" d="M1 0h1v1H1zM3 0h1v1H3zM0 2h1v1H0zM4 1h1v1H4zM4 3h1v1H4zM1 4h1v1H1zM3 4h1v1H3z"/><path opacity=".45" d="M1 1h1v1H1zM3 1h1v1H3zM1 3h1v1H1zM3 3h1v1H3z"/><path opacity=".75" d="M2 1h1v1H2zM1 2h1v1H1zM3 2h1v1H3zM2 3h1v1H2z"/><path d="M2 2h1v1H2z"/></svg>
+        {{ site.author.name }}
       </a>
+      {% endunless %}
 
       <button
         id="nav-toggle"
+        type="button"
         class="nav-toggle"
         aria-expanded="false"
         aria-controls="nav-menu"
@@ -27,8 +31,8 @@
         {% endfor %}
         {% if site.features.dark_mode %}
         <li class="nav-item nav-item--theme">
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-            <svg class="icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false">
+            <svg class="icon icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -39,7 +43,7 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="icon icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>

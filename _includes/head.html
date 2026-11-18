@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbfaf7" id="theme-color">
 
 <!-- Set the theme before first paint to avoid a light-mode flash -->
 <script>
@@ -10,14 +11,15 @@
       theme = 'dark';
     }
     if (theme) document.documentElement.setAttribute('data-theme', theme);
+    // The browser bar follows the site theme (also updated by the toggle)
+    var meta = document.getElementById('theme-color');
+    if (meta && theme === 'dark') meta.setAttribute('content', '#141413');
   })();
 </script>
 
 <!-- Title, description, canonical URL, Open Graph and Twitter tags come from jekyll-seo-tag at the bottom -->
 <meta name="author" content="{{ site.author.name }}">
 <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
-<meta name="theme-color" content="#fefefe" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
 
 <!-- Academic/Scholarly Metadata -->
 <meta name="citation_author" content="{{ site.author.name }}">
@@ -40,11 +42,12 @@
   "url": "{{ site.url }}",
   "sameAs": [
     "https://orcid.org/{{ site.author.orcid }}",
-    "https://github.com/{{ site.author.github }}"
-    {% if site.author.linkedin %},
+    "https://github.com/{{ site.author.github }}",
+    "{{ site.author.ads_library }}"
+    {% if site.author.linkedin and site.author.linkedin != '' %},
     "{{ site.author.linkedin }}"
     {% endif %}
-    {% if site.author.google_scholar %},
+    {% if site.author.google_scholar and site.author.google_scholar != '' %},
     "{{ site.author.google_scholar }}"
     {% endif %}
   ],
@@ -53,7 +56,7 @@
 </script>
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}?v=2"><!-- bump v when the icon changes: browsers cache tab icons hard -->
 <link rel="apple-touch-icon" href="{{ '/assets/images/profile.jpg' | relative_url }}">
 
 <!-- Preconnect to external resources -->
@@ -61,7 +64,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- Google Fonts - Source Serif Pro for headings, Inter for body, Shadows Into Light for quotes -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Shadows+Into+Light&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Shadows+Into+Light&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 
 <!-- Main Stylesheet -->
 <!-- ?v= changes on every build so browsers fetch the new styles after an update -->

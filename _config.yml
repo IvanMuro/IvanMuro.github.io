@@ -76,6 +76,7 @@ exclude:
   - CLAUDE.md
   - kk
   - CV
+  - scripts
 
 # Plugins (GitHub Pages compatible)
 plugins:

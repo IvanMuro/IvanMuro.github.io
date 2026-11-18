@@ -1,170 +1,107 @@
 ---
 layout: home
-title: Home
 show_title: false
 ---
 
-<section class="hero">
-  <div class="hero-content">
-    <p class="hero-tagline">Postdoctoral Researcher | Data Scientist</p>
-    <h1 class="hero-title">Iván Muñoz Rodríguez</h1>
-    <p class="hero-subtitle">X-ray Astrophysics · CEA Paris-Saclay</p>
-    <p class="hero-description">
-      I am an astrophysicist with expertise in the growth of supermassive black holes, the evolution of galaxies and Active Galactic Nuclei (AGN) across cosmic time and different environments, as well as X-ray cluster surveys. My work bridges observations, simulations, and statistical modelling to improve how galaxies, AGN, and galaxy clusters are identified and characterised.
-    </p>
-    <p class="hero-description">
-      Beyond research, I am deeply interested in physiology, nutrition and sport science. You can also find me running in the mountains or reading.
-    </p>
-    <div class="hero-links">
-      <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">
-        My Research
-      </a>
-      <a href="{{ '/publications/' | relative_url }}" class="btn btn-secondary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-        </svg>
-        Publications
-      </a>
-    </div>
-  </div>
-  <div class="hero-image-wrapper">
-    <img
-      src="{{ '/assets/images/profile.jpg' | relative_url }}"
-      alt="Dr. Iván Muñoz Rodríguez"
-      class="hero-image"
-      width="800"
-      height="800"
-      fetchpriority="high"
-      onerror="this.style.background='linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-bg-alt) 100%)'"
-    >
-  </div>
-</section>
+<div class="landing">
+  <div class="landing-lead">
+    <header class="landing-head hero-head">
+      <div class="hero-image-wrapper">
+        <div class="sky" aria-hidden="true"></div>
+        <img
+          src="{{ '/assets/images/profile.jpg' | relative_url }}"
+          alt="Portrait of Iván Muñoz Rodríguez"
+          class="hero-image"
+          width="800"
+          height="800"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-title" id="intro-name">Iván Muñoz Rodríguez</h1>
+        <p class="hero-subtitle"><span class="hero-role">Postdoctoral researcher</span> <span class="hero-role"><span class="nowrap">X-ray astrophysics</span>, <span class="nowrap">CosmoStat lab</span>, <span class="nowrap">CEA Paris-Saclay</span></span></p>
+      </div>
+    </header>
 
-{% include daily-quote.html %}
-
-<section class="section">
-  <h2 class="section-title">Research Interests</h2>
-  <ul class="keyword-list">
-    <li class="keyword-item">X-ray Astronomy</li>
-    <li class="keyword-item">Active Galactic Nuclei</li>
-    <li class="keyword-item">Galaxy Clusters</li>
-    <li class="keyword-item">Supermassive Black Holes</li>
-    <li class="keyword-item">Cluster Detection Algorithms</li>
-    <li class="keyword-item">Semi-empirical Modelling</li>
-    <li class="keyword-item">Statistical Modelling</li>
-    <li class="keyword-item">Large-scale Simulations</li>
-    <li class="keyword-item">Artificial Intelligence</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2 class="section-title">Current Projects</h2>
-  <div class="project-grid">
-    <article class="project-card">
-      <h3 class="project-title">FornaX</h3>
-      <p class="project-description">
-        Building X-ray cluster and AGN catalogues of the FornaX Euclid deep field.
+    <section class="intro" aria-label="About">
+      <p class="hero-description">
+        I study how supermassive black holes grow, how galaxies and Active Galactic Nuclei (AGN) evolve across cosmic time and environments, and how galaxy clusters are found in X-ray surveys. My work combines observations, simulations and statistical modelling to get reliable answers out of large, incomplete survey data.
       </p>
-      <div class="project-tags">
-        <span class="tag">Euclid</span>
-        <span class="tag">X-ray Catalogues</span>
-      </div>
-    </article>
-    <article class="project-card">
-      <h3 class="project-title">Euclid Consortium</h3>
-      <p class="project-description">
-        Active member of the Science Working Groups for Clusters of Galaxies and Galaxy Evolution, contributing to multi-wavelength cluster science and AGN research.
+      <p class="hero-description">
+        Beyond research, I am deeply interested in physiology, nutrition and sport science. You can also find me running in the mountains or reading.
       </p>
-      <div class="project-tags">
-        <span class="tag">Euclid</span>
-        <span class="tag">Galaxy Evolution</span>
-      </div>
-    </article>
-   <!--- <article class="project-card">
-      <h3 class="project-title">The 300 Project</h3>
-      <p class="project-description">
-        Exploring the incidence of AGN in galaxy clusters using hydrodynamical simulations, bridging theory and observations.
+      <p class="hero-description intro-open">Open to collaborations, talks, student projects, and research roles.</p>
+      <p class="hero-links">
+        <a class="button-primary" href="{{ '/assets/cv/cv_munoz_rodriguez.pdf' | relative_url }}" target="_blank" rel="noopener">CV (PDF)<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="mailto:{{ site.author.email }}">Email</a>
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
       </p>
-      <div class="project-tags">
-        <span class="tag">Simulations</span>
-        <span class="tag">AGN in Clusters</span>
+      <div class="landing-note">
+        {% include daily-quote.html %}
       </div>
-    </article>
-    -->
+    </section>
   </div>
-</section>
 
-<section class="section">
-  <h2 class="section-title">Research Path</h2>
-  <div class="research-timeline">
-    <div class="timeline-item timeline-current timeline-major">
-      <div class="timeline-content">
-        <span class="timeline-date">Jan 2025 – Present</span>
-        <h3 class="timeline-title">Postdoctoral Researcher</h3>
-        <p class="timeline-location">CEA Paris-Saclay, Astrophysics Department</p>
-        <p class="timeline-description">Building X-ray cluster and AGN catalogues for the FornaX Euclid deep field.</p>
-      </div>
-      <div class="timeline-image">
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/cea.jpg' | relative_url }}" alt="CEA Paris-Saclay" onerror="this.parentElement.innerHTML='🔬'">
-      </div>
-    </div>
-    <div class="timeline-item timeline-major">
-      <div class="timeline-content">
-        <span class="timeline-date">Aug 2024</span>
-        <h3 class="timeline-title">PhD Defence</h3>
-        <p class="timeline-location">NOA Athens & University of Southampton</p>
-        <p class="timeline-description">Successfully defended thesis: "Semi-empirical models of X-ray AGN in galaxy clusters".</p>
-      </div>
-      <div class="timeline-image">
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/phd.jpg' | relative_url }}" alt="PhD Defence" onerror="this.parentElement.innerHTML='🎓'">
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-date">2024</span>
-        <h3 class="timeline-title">ESO Visitor Programme</h3>
-        <p class="timeline-location">European Southern Observatory, Garching</p>
-        <p class="timeline-description">3-month research visit studying the radial distribution of AGN in ~80 clusters.</p>
-      </div>
-      <div class="timeline-image">
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/eso.jpg' | relative_url }}" alt="ESO Garching" onerror="this.parentElement.innerHTML='🔭'">
-      </div>
-    </div>
-    <div class="timeline-item timeline-major">
-      <div class="timeline-content">
-        <span class="timeline-date">Oct 2020</span>
-        <h3 class="timeline-title">Marie Curie PhD Fellow</h3>
-        <p class="timeline-location">NOA Athens & University of Southampton</p>
-        <p class="timeline-description">Started PhD on semi-empirical models of X-ray AGN in galaxy clusters (BiD4BESt ITN).</p>
-      </div>
-      <div class="timeline-image">
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/noa.jpg' | relative_url }}" alt="NOA Athens" onerror="this.parentElement.innerHTML='🇬🇷'">
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-date">2019 – 2020</span>
-        <h3 class="timeline-title">M.Sc. in Astronomy</h3>
-        <p class="timeline-location">University of Granada, Spain</p>
-        <p class="timeline-description">CARMENES collaboration. Thesis on exoplanet detectability and occurrence rates.</p>
-      </div>
-      <div class="timeline-image">
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/granada.jpg' | relative_url }}" alt="Granada" onerror="this.parentElement.innerHTML='🌌'">
-      </div>
-    </div>
-    <div class="timeline-item timeline-major">
-      <div class="timeline-content">
-        <span class="timeline-date">2014 – 2019</span>
-        <h3 class="timeline-title">B.Sc. in Physics</h3>
-        <p class="timeline-location">University of Salamanca, Spain</p>
-        <p class="timeline-description">Thesis on astronomical bounds of Primordial Black Holes.</p>
-      </div>
-      <div class="timeline-image">
-        <img loading="lazy" decoding="async" src="{{ '/assets/images/timeline/salamanca.jpg' | relative_url }}" alt="Salamanca" onerror="this.parentElement.innerHTML='⚛️'">
-      </div>
-    </div>
+  <div class="landing-evidence">
+    <section class="landing-block landing-work" aria-labelledby="work-title">
+      <h2 class="landing-title" id="work-title">What I do</h2>
+      <ul class="source-list work-list">
+        <li class="source-item">
+          <span class="source-mark" aria-hidden="true"></span>
+          <div>
+            <h3 class="work-title"><a href="{{ '/research/#x-ray-cluster-surveys' | relative_url }}">X-ray surveys &amp; clusters</a></h3>
+            <p class="work-text">Finding galaxy clusters in XMM-Newton surveys and modelling which ones a survey detects. I lead this selection function for FornaX.</p>
+          </div>
+        </li>
+        <li class="source-item">
+          <span class="source-mark" aria-hidden="true"></span>
+          <div>
+            <h3 class="work-title"><a href="{{ '/research/#machine-learning' | relative_url }}">Machine learning &amp; large datasets</a></h3>
+            <p class="work-text">Machine learning for X-ray source classification and Euclid catalogues, in Python on HPC clusters.</p>
+          </div>
+        </li>
+        <li class="source-item">
+          <span class="source-mark" aria-hidden="true"></span>
+          <div>
+            <h3 class="work-title"><a href="{{ '/research/#modelling' | relative_url }}">Simulations &amp; forward modelling</a></h3>
+            <p class="work-text">Semi-empirical and forward models of what surveys observe, built on N-body and hydrodynamical simulations.</p>
+          </div>
+        </li>
+        <li class="source-item">
+          <span class="source-mark" aria-hidden="true"></span>
+          <div>
+            <h3 class="work-title"><a href="{{ '/research/#agn-in-clusters' | relative_url }}">Black holes &amp; environment</a></h3>
+            <p class="work-text">How cluster environments trigger AGN, and how AGN contaminate X-ray cluster detection.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="landing-block landing-papers" aria-labelledby="papers-title">
+      <h2 class="landing-title" id="papers-title">Selected papers</h2>
+      {% if site.data.ads_metrics %}
+      <p class="paper-stats">{{ site.data.ads_metrics.refereed }} refereed papers · {{ site.data.ads_metrics.citations }} citations · h-index {{ site.data.ads_metrics.h_index }} <span class="paper-stats-source">(NASA ADS)</span></p>
+      {% endif %}
+      <ul class="source-list">
+        <li class="source-item">
+          <span class="source-mark" aria-hidden="true"></span>
+          <div>
+            <h3 class="paper-title"><a href="https://doi.org/10.1093/mnras/stae1465" target="_blank" rel="noopener">Scrutinizing evidence for the triggering of active galactic nuclei in the outskirts of massive galaxy clusters at z ≈ 1<span class="sr-only"> (opens in a new tab)</span></a></h3>
+            <p class="paper-finding">The apparent excess of AGN in the outskirts of z ≈ 1 clusters is most likely background and foreground sources, so current data cannot yet show cluster infall switching black holes on.</p>
+            <p class="paper-meta"><span class="author-highlight">Muñoz Rodríguez, I.</span>, et al. · MNRAS, 2024 · <a href="https://ui.adsabs.harvard.edu/abs/10.1093/mnras/stae1465/abstract" target="_blank" rel="noopener">ADS<span class="sr-only"> (opens in a new tab)</span></a></p>
+          </div>
+        </li>
+        <li class="source-item">
+          <span class="source-mark" aria-hidden="true"></span>
+          <div>
+            <h3 class="paper-title"><a href="https://doi.org/10.1093/mnras/stac3114" target="_blank" rel="noopener">Cosmic evolution of the incidence of Active Galactic Nuclei in massive clusters: Simulations versus observations<span class="sr-only"> (opens in a new tab)</span></a></h3>
+            <p class="paper-finding">Compared with a model where environment plays no role, massive clusters boost black hole growth at z ≈ 1.2 and suppress it near the present day.</p>
+            <p class="paper-meta"><span class="author-highlight">Muñoz Rodríguez, I.</span>, et al. · MNRAS, 2023 · <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1041M" target="_blank" rel="noopener">ADS<span class="sr-only"> (opens in a new tab)</span></a></p>
+          </div>
+        </li>
+      </ul>
+      <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications<span aria-hidden="true"> →</span></a> <a href="{{ site.author.ads_library }}" target="_blank" rel="noopener">Full list on NASA ADS<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a></p>
+    </section>
   </div>
-</section>
+</div>
