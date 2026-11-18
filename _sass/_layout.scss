@@ -19,7 +19,7 @@
 
 .navbar {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
   padding-bottom: var(--space-4);
@@ -27,6 +27,9 @@
 }
 
 .site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
   font-family: var(--font-serif);
   font-size: var(--text-lg);
   font-weight: 600;
@@ -36,8 +39,11 @@
   &:hover { color: var(--color-text); }
 }
 
-// The home page hero already shows the name in large type
-.site-logo--home { visibility: hidden; }
+// Identity mark: an X-ray point source, pixel by pixel
+.site-mark {
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
 
 .nav-menu {
   display: flex;
@@ -153,7 +159,6 @@
 // ----- Main -----
 
 .site-main {
-  flex: 1;
   width: 100%;
   max-width: var(--content-max);
   margin: 0 auto;
@@ -176,8 +181,10 @@
 
 // ----- Footer -----
 
+// The footer follows the content rather than sitting at the bottom of tall
+// windows; the rule sits on the inner box so it lines up with the header rule.
 .site-footer {
-  .container {
+  .footer-inner {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -209,11 +216,20 @@
 // ----- Home -----
 
 .hero {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 150px;
-  gap: var(--space-8);
-  align-items: start;
+  grid-template-columns: minmax(0, var(--measure)) minmax(0, 1fr);
+  gap: var(--space-12);
+  align-items: center;
   margin-bottom: var(--space-8);
+
+  > :not(.hero-backdrop) { position: relative; }
+
+  @media (max-width: 900px) {
+    grid-template-columns: minmax(0, 1fr) 180px;
+    gap: var(--space-8);
+    align-items: start;
+  }
 
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
@@ -221,6 +237,79 @@
 
     .hero-image-wrapper { order: -1; }
   }
+}
+
+// The photo sits on a mock X-ray observation (_includes/xray-field.svg)
+.hero-image-wrapper {
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1;
+
+  @media (max-width: 640px) {
+    justify-self: start;
+    max-width: 110px;
+  }
+}
+
+// Mock X-ray observation filling the intro, from the header rule down to
+// the daily quote's rule (_includes/xray-field.svg). Pixels stay 10px; the
+// main cluster (180px from the image's right edge, 450px from its top) is
+// pinned behind the centre of the photo.
+.hero-backdrop {
+  --top: var(--space-12);                          // .site-main top padding
+  --bottom: var(--space-10);                       // hero and quote margins collapse to the larger
+  --cx: min(180px, (100% - var(--measure) - var(--space-12)) / 2);
+  --cy: calc(50% + (var(--top) - var(--bottom)) / 2);
+  position: absolute;
+  top: calc(-1 * var(--top));
+  bottom: calc(-1 * var(--bottom));
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: var(--color-accent);
+  pointer-events: none;
+  // Full strength around the photo, easing to a quiet third under the text
+  -webkit-mask-image: linear-gradient(to left, #000 0, #000 var(--fade-start, 360px), rgb(0 0 0 / 0.3) var(--fade-end, 640px));
+  mask-image: linear-gradient(to left, #000 0, #000 var(--fade-start, 360px), rgb(0 0 0 / 0.3) var(--fade-end, 640px));
+
+  @media (max-width: 900px) {
+    --cx: 90px;
+    --cy: calc(90px + var(--top));
+    --fade-start: 180px;
+    --fade-end: 360px;
+    --regions-shift: 90px;   // the image extends 90px past the right edge here
+  }
+
+  @media (max-width: 640px) { display: none; }
+
+  .hero-field {
+    position: absolute;
+    right: calc(var(--cx) - 180px);
+    top: calc(var(--cy) - 450px);
+    width: 1200px;
+    height: 900px;
+    max-width: none;
+  }
+
+  // Detection circles: only over the open field, gone before the text
+  .hero-regions {
+    -webkit-mask-image: linear-gradient(to left, #000 0, #000 calc(var(--fade-start, 360px) + var(--regions-shift, 0px) - 30px), transparent calc(var(--fade-start, 360px) + var(--regions-shift, 0px) + 30px));
+    mask-image: linear-gradient(to left, #000 0, #000 calc(var(--fade-start, 360px) + var(--regions-shift, 0px) - 30px), transparent calc(var(--fade-start, 360px) + var(--regions-shift, 0px) + 30px));
+  }
+}
+
+// The main cluster's detection circle, hugging the photo at any size
+.hero-image-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: calc(100% / 6 * 0.6);
+  border: 1.2px solid var(--color-accent);
+  border-radius: 50%;
+  pointer-events: none;
+
+  @media (max-width: 640px) { display: none; }
 }
 
 .hero-title {
@@ -241,27 +330,65 @@
   margin-bottom: var(--space-6);
 }
 
+.hero-role { display: block; }
+
 .hero-image {
-  width: 150px;
-  height: 150px;
+  position: absolute;
+  inset: calc(100% / 6);
+  width: calc(100% * 2 / 3);
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
 
   @media (max-width: 640px) {
-    width: 110px;
-    height: 110px;
+    position: static;
+    width: 100%;
   }
 }
 
+// One primary action; the other links stay text but keep 44px targets
 .hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--space-6);
+  row-gap: var(--space-2);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
-  margin: 0;
+  margin: var(--space-6) 0 0;
 
-  a { margin-right: var(--space-5); }
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+.button-primary {
+  padding: 0 var(--space-5);
+  font-weight: 600;
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+
+  &:hover {
+    color: var(--color-bg);
+    background: var(--color-accent-hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
 }
 
 // ----- Blog post -----
+
+// Posts read as a single column at reading width inside the wide frame
+.post { max-width: var(--measure); }
 
 .post-header { margin-bottom: var(--space-8); }
 

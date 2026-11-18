@@ -119,7 +119,6 @@ permalink: /cv/
 <div class="cv-section">
   <ul class="plain-list">
     <li><strong>FornaX</strong> (2025–present) – X-ray cluster and AGN catalogue builder, ESA-datalabs moderator, LOC 2025</li>
-    <li><strong>The 300 Project</strong> (2025–present) – AGN incidence in clusters</li>
     <li><strong>Euclid Consortium</strong> (2022–present) – SWG Clusters of Galaxies & Galaxy Evolution</li>
     <li><strong>BiD4BESt</strong> (2020–2024) – Big Data for Black Hole Evolution Studies</li>
     <li><strong>CARMENES</strong> (2019–2020) – Exoplanet detection via radial velocities</li>
@@ -198,7 +197,7 @@ permalink: /cv/
     </div>
     <p class="cv-item-subtitle">Principal supervisor: Antonis Georgakakis</p>
     <p class="cv-item-description">
-      Co-supervision during 3-month research visit at NOA. Currently ESR student of TALES EU Doctoral Training Network.
+      Co-supervision during 3-month research visit at the National Observatory of Athens. Currently ESR student of TALES EU Doctoral Training Network.
     </p>
   </div>
 
@@ -208,7 +207,7 @@ permalink: /cv/
     </div>
     <p class="cv-item-subtitle">Principal supervisor: Antonis Georgakakis</p>
     <p class="cv-item-description">
-      Co-supervision of bachelor thesis at NOA.
+      Co-supervision of bachelor thesis at the National Observatory of Athens.
     </p>
   </div>
 </div>
@@ -220,11 +219,11 @@ permalink: /cv/
   <div class="cv-item">
     <div class="cv-item-header">
       <span class="cv-item-title">Pilgrims of the Kosmos</span>
-      <span class="cv-item-date">2022 – Present</span>
+      <span class="cv-item-date">2022</span>
     </div>
     <p class="cv-item-subtitle">Podcast</p>
     <p class="cv-item-description">
-      Co-hosting a podcast talking with scientists at different career stages about their research journeys.
+      Co-hosted a podcast talking with scientists at different career stages about their research journeys.
     </p>
   </div>
 

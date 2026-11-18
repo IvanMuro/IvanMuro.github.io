@@ -60,13 +60,6 @@ I am an astrophysicist with expertise in the growth of **supermassive black hole
   </div>
   <div class="cv-item">
     <div class="cv-item-header">
-      <span class="cv-item-title">The 300 Project</span>
-      <span class="cv-item-date">2025 – present</span>
-    </div>
-    <p class="cv-item-description">Exploring the incidence of AGN in galaxy clusters using state-of-the-art hydrodynamical simulations.</p>
-  </div>
-  <div class="cv-item">
-    <div class="cv-item-header">
       <span class="cv-item-title">Euclid Consortium</span>
       <span class="cv-item-date">2022 – present</span>
     </div>
@@ -102,9 +95,9 @@ I am an astrophysicist with expertise in the growth of **supermassive black hole
   <div class="cv-item">
     <div class="cv-item-header">
       <span class="cv-item-title">Pilgrims of the Kosmos Podcast</span>
-      <span class="cv-item-date">2022 – present</span>
+      <span class="cv-item-date">2022</span>
     </div>
-    <p class="cv-item-description">Co-hosting a podcast where we talk with scientists at different career stages, exploring their research journeys and the human side of science.</p>
+    <p class="cv-item-description">Co-hosted a podcast where we talked with scientists at different career stages, exploring their research journeys and the human side of science.</p>
   </div>
   <div class="cv-item">
     <div class="cv-item-header">

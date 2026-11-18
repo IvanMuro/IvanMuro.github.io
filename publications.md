@@ -15,7 +15,7 @@ permalink: /publications/
   <li class="publication-item">
     <h3 class="publication-title">
       <a href="https://doi.org/10.1093/mnras/stae1465" target="_blank" rel="noopener">
-        Scrutinising evidence for the triggering of Active Galactic Nuclei in the outskirts of massive galaxy clusters at z ~ 1
+        Scrutinizing evidence for the triggering of active galactic nuclei in the outskirts of massive galaxy clusters at z ≈ 1
       </a>
     </h3>
     <p class="publication-authors">

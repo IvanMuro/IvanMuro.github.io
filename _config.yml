@@ -12,7 +12,7 @@ twitter:
 # Author Information
 author:
   name: "Iván Muñoz Rodríguez"
-  title: "Postdoctoral Researcher"
+  title: "Postdoctoral Researcher and Data Scientist"
   affiliation: "CEA Paris-Saclay"
   department: "Astrophysics Department (DAp)"
   email: "imrphys@gmail.com"
@@ -76,6 +76,7 @@ exclude:
   - CLAUDE.md
   - kk
   - CV
+  - scripts
 
 # Plugins (GitHub Pages compatible)
 plugins:
