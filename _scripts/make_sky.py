@@ -147,7 +147,9 @@ for k in range(N):
     body = ''.join(paths(px, SIDE, SIDE, q="'"))
     uri = (f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {SIDE} {SIDE}' "
            f"shape-rendering='crispEdges'><g fill='none' stroke='%23000'>{body}</g></svg>").replace('<', '%3C').replace('>', '%3E')
-    marks.append(f'  --mark-{k + 1}: url("data:image/svg+xml,{uri}");')
+    # Interpolated, with ' as %27: GitHub Pages' Ruby Sass 3.7 rejects a bare url() in a custom property
+    uri = uri.replace("'", '%27')
+    marks.append(f'  --mark-{k + 1}: #{{\'url("data:image/svg+xml,{uri}")\'}};')
 marks += ['}', '', '@mixin varied-marks {']
 marks += [f'  &:nth-child({N}n + {k + 1}) {{ --mark: var(--mark-{k + 1}); }}' for k in range(N)]
 marks.append('}')

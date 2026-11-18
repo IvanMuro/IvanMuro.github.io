@@ -397,12 +397,12 @@
   pointer-events: none;
   -webkit-mask:
     url("../images/xray-sky.svg") 0 0 / 2600px 2000px no-repeat,
-    radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgb(0 0 0 / 0.55) 650px, rgb(0 0 0 / 0.25) 1400px),
+    radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgba(0, 0, 0, 0.55) 650px, rgba(0, 0, 0, 0.25) 1400px),
     linear-gradient(to bottom, #000 1500px, transparent 2000px);
   -webkit-mask-composite: source-in, source-in;
   mask:
     url("../images/xray-sky.svg") 0 0 / 2600px 2000px no-repeat,
-    radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgb(0 0 0 / 0.55) 650px, rgb(0 0 0 / 0.25) 1400px),
+    radial-gradient(circle at 720px 260px, #000 0, #000 280px, rgba(0, 0, 0, 0.55) 650px, rgba(0, 0, 0, 0.25) 1400px),
     linear-gradient(to bottom, #000 1500px, transparent 2000px);
   mask-composite: intersect;
 
@@ -431,7 +431,7 @@
   letter-spacing: -0.01em;
   white-space: nowrap;
 
-  @media (max-width: 640px) { font-size: min(var(--text-2xl), 5.4vw); }
+  @media (max-width: 640px) { font-size: #{"min(var(--text-2xl), 5.4vw)"}; }
 }
 
 // The role lines match the name (serif, ink, semibold), a size down

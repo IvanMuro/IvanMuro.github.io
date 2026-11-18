@@ -57,6 +57,5 @@
   --rail: 15rem;                // section-label column on inner pages
 
   // Pixel motif: a 3x3 X-ray point source, bright centre, dimmer neighbours
-  //--pixel-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' shape-rendering='crispEdges'%3E%3Cpath opacity='.35' d='M0 0h1v1H0zM2 0h1v1H2zM0 2h1v1H0zM2 2h1v1H2z'/%3E%3Cpath opacity='.7' d='M1 0h1v1H1zM0 1h1v1H0zM2 1h1v1H2zM1 2h1v1H1z'/%3E%3Cpath d='M1 1h1v1H1z'/%3E%3C/svg%3E");
-  --pixel-source: #{'url("data:image/svg+xml,%3Csvg xmlns=''http://www.w3.org/2000/svg'' viewBox=''0 0 3 3'' shape-rendering=''crispEdges''%3E%3Cpath opacity=''.35'' d=''M0 0h1v1H0zM2 0h1v1H2zM0 2h1v1H0zM2 2h1v1H2z''/%3E%3Cpath opacity=''.7'' d=''M1 0h1v1H1zM0 1h1v1H0zM2 1h1v1H2zM1 2h1v1H1z''/%3E%3Cpath d=''M1 1h1v1H1z''/%3E%3C/svg%3E")'};
+  --pixel-source: #{'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 3 3%27 shape-rendering=%27crispEdges%27%3E%3Cpath opacity=%27.35%27 d=%27M0 0h1v1H0zM2 0h1v1H2zM0 2h1v1H0zM2 2h1v1H2z%27/%3E%3Cpath opacity=%27.7%27 d=%27M1 0h1v1H1zM0 1h1v1H0zM2 1h1v1H2zM1 2h1v1H1z%27/%3E%3Cpath d=%27M1 1h1v1H1z%27/%3E%3C/svg%3E")'};
 }
